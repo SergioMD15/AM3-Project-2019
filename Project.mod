@@ -105,5 +105,9 @@ subject to {
 	// Constraint 7 --> ?? 
 	forall(p1 in P, p2 in P: p1!=p2)
 	  some_hired[p1] + some_hired[p2] + same_country[p1, p2] <= 3;
+	  
+	// Constraint 8 --> The final number of hired workers has to be
+	// exactly the same as the number of workers we wanted to hire.
+	sum(p in P) (hired_base[p] + hired_extra[p]) == workers;
 }
  
