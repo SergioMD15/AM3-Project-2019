@@ -1,0 +1,12 @@
+/*********************************************
+ * OPL 12.6.0.0 Data
+ * Author: sergio
+ * Creation Date: May 24, 2019 at 5:02:35 PM
+ *********************************************/
+
+workers = 40;
+nProviders=2;
+available_workers = [40 20];
+cost_contract = [20 20];
+cost_worker = [12 20];
+country = [1 2];

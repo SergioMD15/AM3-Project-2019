@@ -50,13 +50,14 @@ dvar boolean none_hired[p in P];
 dvar boolean hired_1[p in P];
 dvar boolean hired_2[p in P];
 dvar boolean hired_3[p in P];
+dvar int z;
 
 
 // PREPROCESSING
 execute {
   for ( var i = 1; i <= nProviders; i++){
   	for ( var j = 1; j <= nProviders; j++){
-  		if(country[i] == country[j]){
+  		if(i !=j && country[i] == country[j]){
     		same_country[i][j] = 1;
     	}    		
 	}
@@ -65,11 +66,14 @@ execute {
 ;
 
 minimize
-  sum(p in P)
-	((cost_contract[p] * 1 - none_hired[p]) +
-		cost_worker[p] * hired_base[p]);
+  z;
 
 subject to {
+
+	z == sum(p in P)
+		(cost_contract[p] * (1 - none_hired[p]) +
+			cost_worker[p] * (hired_base[p] + hired_extra[p])
+			+ cost_1 * hired_1[p] + cost_2 * hired_2[p] + cost_3 * hired_3[p]);
 	  
 	// CONSTRAINT 1
 	// We hire either all or less providers.
@@ -92,11 +96,37 @@ subject to {
 	// If we hire some providers from two different providers
 	// they have to be from different countries.
 	forall(p1 in P, p2 in P: p1!=p2)
-	  2 - none_hired[p1] + none_hired[p2] + same_country[p1, p2] <= 2;
+	  2 - (none_hired[p1] + none_hired[p2] + same_country[p1, p2]) <= 2;
 	  
 	// CONSTRAINT 5
 	// The number of total providers hired in the end has to be
 	// the same as the initial amount received as an input.
-	sum(p in P) hired_base[p] == workers;
+	sum(p in P) (hired_base[p] + hired_extra[p]) == workers;
+	
+	forall(p in P) hired_extra[p] >= 0;
+	
+	// CONSTRAINT 6 
+	// The number of hired workers from tax bracket 1 from provider p
+	// has to be at most 5.
+	forall(p in P)
+	  hired_1[p] <= 5;
+	  
+	// CONSTRAINT 7
+	// The number of hired workers from tax bracket 2 from provider p
+	// has to be at most 5.
+	forall(p in P)
+	  hired_2[p] <= 5;
+	  
+	// CONSTRAINT 8
+	// The number of extra hired workers from any provider has to be
+	// lower than or equal the number of available workers.
+	forall(p in P)
+	  hired_extra[p] <= all_hired[p] * available_workers[p];
+	  
+	// CONSTRAINT 9
+	// The sum of the workers hired from a provider p in the different
+	// tax brackets has to be equal to the extra workers hired. 
+	forall(p in P)
+	  hired_1[p] + hired_2[p] + hired_3[p] == hired_extra[p];
 }
  

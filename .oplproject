@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+	<version>1.0</version>
+	<configs>
+		<config category="opl" default="true" name="Config2">
+			<ref name="Alternative.mod" type="model">
+			</ref>
+			<ref name="Easy_both_all.dat" type="data">
+			</ref>
+		</config>
+		<config category="opl" default="false" name="Config1">
+			<ref name="Alternative.mod" type="model">
+			</ref>
+			<ref name="Easy.dat" type="data">
+			</ref>
+		</config>
+		<config category="opl" default="false" name="Config3">
+			<ref name="Alternative.mod" type="model">
+			</ref>
+			<ref name="Easy_half.dat" type="data">
+			</ref>
+		</config>
+	</configs>
+	
+</project>
