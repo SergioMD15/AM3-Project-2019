@@ -4,7 +4,7 @@
  *********************************************/
 
 int nProviders=...;
-int workers=...;
+int wr=...;
 range P=1..nProviders;
 
 // Available workers per provider
@@ -24,13 +24,13 @@ int cost_worker[p in P]=...;
 // other countries.
 
 // Cost of the first 5 workers
-int cost_1 = 2;
+int cost_1 = ...;
 
 // Cost of the next 5 workers
-int cost_2 = 10;
+int cost_2 = ...;
 
 // Cost of the remaining workers
-int cost_3 = 20;
+int cost_3 = ...;
 
 // Whether two providers belong to the same country or not
 int same_country[p1 in P, p2 in P];
@@ -109,13 +109,13 @@ subject to {
 	// CONSTRAINT 5
 	// The number of total providers hired in the end has to be
 	// the same as the initial amount received as an input.
-	sum(p in P) (hired_base[p] + hired_extra[p]) == workers;
+	sum(p in P) (hired_base[p] + hired_extra[p]) == wr;
 	
 	// CONSTRAINT 6 
 	// The number of hired workers from tax bracket 1 from provider p
 	// has to be at most 5.
 	forall(p in P)
-	  hired_1[p] <= 5;
+	  hired_1[p] <= 5 * all_hired[p];
 	  
 	forall(p in P){
 	  hired_1[p] >= 5 * all_extra_1[p];
