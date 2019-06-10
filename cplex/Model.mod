@@ -51,9 +51,13 @@ dvar boolean some_hired[p in P];
 dvar int hired_1[p in P];
 dvar int hired_2[p in P];
 dvar int hired_3[p in P];
+
+// To check whether we hired for each of the tax
+// brackets for each provider
 dvar boolean all_extra_1[p in P];
 dvar boolean all_extra_2[p in P];
 dvar boolean third_hire[p in P];
+
 dvar int z;
 
 

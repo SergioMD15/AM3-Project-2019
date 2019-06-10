@@ -1,0 +1,10 @@
+wr=49;
+nProviders=8;
+
+cost_worker=[ 14 39 32 64 18 43 36 10 ];
+available_workers=[ 16 8 14 7 38 33 25 12 ];
+cost_contract=[ 2424 2526 1690 2801 2645 843 2518 2592 ];
+country=[ 3 1 7 2 3 2 1 7 ];
+cost_1=5;
+cost_2=7;
+cost_3=300;
