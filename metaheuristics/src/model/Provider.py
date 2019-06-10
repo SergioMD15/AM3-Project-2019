@@ -86,3 +86,6 @@ class Provider:
 
     def __hash__(self):
         return self.get_id()
+
+    def __str__(self):
+        return 'Provider: %d \t Num_workers: %d' % (self.id, self.available_workers)

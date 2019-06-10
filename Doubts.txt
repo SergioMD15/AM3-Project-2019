@@ -1,0 +1,7 @@
+
+	Right now, I'm trying to get the providers with the largest amount of workers (taking into account base and extra) to
+	hire as most as possible without hiring more than the required ones.
+	The problem here is that, it would be better initially trying to reach a solution just with the base workers, because
+	the solution will be much more cheaper for sure. We need to decide how to do this. One possible solution is to run two
+	iterations. The first one will check wheter we can complete the solution just with the base workers or if instead, we
+	need to hire extra workers. And the second iteration will check for the extra 

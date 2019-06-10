@@ -1,4 +1,4 @@
-from heuristics.LocalSearch import LocalSearch
+# from heuristics.LocalSearch import LocalSearch
 from solver.Solution import Solution
 from solver.Solver import Solver
 import sys
@@ -12,6 +12,7 @@ class Greedy_Solver(Solver):
     def greedyConstruction(self, config, problem):
         # get an empty solution for the problem
         solution = Solution.createEmptySolution(config, problem)
+        print(solution)
 
         # get providers
         providers = problem.get_providers()
@@ -21,53 +22,31 @@ class Greedy_Solver(Solver):
         elapsedEvalTime = 0
         evaluatedCandidates = 0
 
+
         # for each service taken in sorted order
-        for provider in sorted_providers:
-            #### BUSES ####
+        for i in range(len(sorted_providers)):
 
-            candidateBuses = []
+            candidate_providers = []
 
-            candidateBuses, assignment_elapsedEvalTime, assignment_evaluatedCandidates = solution.find_feasible_hirings(
-                provider, sorted_providers, problem)
-            elapsedEvalTime += assignment_elapsedEvalTime
-            evaluatedCandidates += assignment_evaluatedCandidates
+            candidate_providers, hiring_elapsedEvalTime, hiring_evaluatedCandidates = solution.find_feasible_hirings(
+                sorted_providers, problem)
+            elapsedEvalTime += hiring_elapsedEvalTime
+            evaluatedCandidates += hiring_evaluatedCandidates
 
-            # choose the cheapest assignment
-            minBestAssignment = float('infinity')
-            choosenAssignment = None
-            for assignment in candidateBuses:
-                auxCalculation = assignment.calculateCost()
-                if(minBestAssignment > auxCalculation):
-                    minBestAssignment = auxCalculation
-                    choosenAssignment = assignment
+            # choose the cheapest hiring
+            min_best_hiring = float('infinity')
+            choosen_hiring = None
+            for h in candidate_providers:
+                hiring_cost = h.calculate_cost(problem.cost_1, problem.cost_2, problem.cost_3)
+                if(min_best_hiring > hiring_cost):
+                    min_best_hiring = hiring_cost
+                    choosen_hiring = h
 
-            #### DRIVES ####
-
-            candidateDrives = []
-
-            candidateDrives, drives_elapsedEvalTime, drives_evaluatedCandidates = solution.findFeasibleDrivers(
-                service, sortedDrivers, problem)
-            elapsedEvalTime += drives_elapsedEvalTime
-            evaluatedCandidates += drives_evaluatedCandidates
-
-            # choose drives with the minimum cost
-            minBestDrives = float('infinity')
-            choosenDrives = None
-
-            for drives in candidateDrives:
-                auxCalculation = drives.calculateCost(candidateDrives)
-                if(minBestDrives > auxCalculation):
-                    minBestDrives = auxCalculation
-                    choosenDrives = drives
-
-            if(choosenDrives is None or choosenAssignment is None):
+            if(choosen_hiring is None):
                 solution.makeInfeasible()
                 break
 
-            # Assign the current service to the corresponding assignment (Bus with Service),
-            # and to the corresponding drives (Driver with Service)
-            solution.assignments.append(choosenAssignment)
-            solution.drives.append(choosenDrives)
+            solution.hired.append(choosen_hiring)
 
         return (solution, elapsedEvalTime, evaluatedCandidates)
 
@@ -83,19 +62,19 @@ class Greedy_Solver(Solver):
 
         print('Greedy solution: ', solutionValue)
 
-        localSearch = LocalSearch(config)
-        solution = localSearch.run(solution)
+        # localSearch = LocalSearch(config)
+        # solution = localSearch.run(solution)
 
-        solutionValue = solution.calculateCost()
+        # solutionValue = solution.calculateCost()
 
-        print('Local search solution: ', solutionValue)
+        # print('Local search solution: ', solutionValue)
 
-        self.writeLogLine(solutionValue, 1)
+        # self.writeLogLine(solutionValue, 1)
 
-        avg_evalTimePerCandidate = 0.0
-        if (evaluatedCandidates != 0):
-            avg_evalTimePerCandidate = 1000.0 * \
-                elapsedEvalTime / float(evaluatedCandidates)
+        # avg_evalTimePerCandidate = 0.0
+        # if (evaluatedCandidates != 0):
+        #     avg_evalTimePerCandidate = 1000.0 * \
+        #         elapsedEvalTime / float(evaluatedCandidates)
 
         print('')
         print('Greedy Candidate Evaluation Performance:')
@@ -103,7 +82,7 @@ class Greedy_Solver(Solver):
         print('  Total Eval. Time     ', elapsedEvalTime, 's')
         print('  Avg. Time / Candidate', avg_evalTimePerCandidate, 'ms')
 
-        localSearch.printPerformance()
+        # localSearch.printPerformance()
 
         return(solution)
 

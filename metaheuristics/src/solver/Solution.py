@@ -9,17 +9,15 @@ sys.path.append("..")
 # checks and to dump the solution into a string or file.
 
 
-class Solution(Problem):
+class Solution():
     @staticmethod
     def createEmptySolution(config, problem):
         solution = Solution(problem.inputData)
         return(solution)
 
     def __init__(self, inputData):
-        super(Solution, self).__init__(inputData)
-
+        # super(Solution, self).__init__(inputData)
         self.feasible = True
-
         self.hired = []
 
     def makeInfeasible(self):
@@ -53,28 +51,30 @@ class Solution(Problem):
         valid = True
         hired_amount = 0
         for provider in sorted_providers:
-            evaluatedCandidates += 1
-            if(self.is_in_solution(provider) or hired_amount == problem.get_workers()):
-                continue
+            print(len(feasible_hires))
+            if(hired_amount == problem.workers):
+                feasible = Hired(provider, 0)
+            else:
+                if(self.is_in_solution(provider)):
+                    continue
+                for h in self.hired:
+                    if(problem.is_same_country(h.get_provider(), provider)):
+                        valid = False
+                        break
+                if(not valid):
+                    continue
+                workers_to_hire = self.calculate_feasible_workers(
+                    hired_amount, provider, problem.workers)
 
-            for h in self.hired:
-                if(problem.is_same_country(h.get_provider(), provider)):
-                    valid = False
-                    break
-            if(not valid):
-                continue
+                feasible = Hired(provider, workers_to_hire)
+                feasible_hires.append(feasible)
 
-            workers_to_hire = calculate_feasible_workers(
-                hired_amount, provider, problem.get_workers())
-
-            feasible = Hired(provider, workers_to_hire)
-            feasible_hires.append(feasible)
-
-            hired_amount += workers_to_hire
+                evaluatedCandidates += 1
+                hired_amount += workers_to_hire
         elapsedEvalTime = time.time() - startEvalTime
         return(feasible_hires, elapsedEvalTime, evaluatedCandidates)
 
-    def calculate_feasible_workers(already_hired, provider, objective_workers):
+    def calculate_feasible_workers(self, already_hired, provider, objective_workers):
         remaining_workers = objective_workers - already_hired
         available = provider.get_available_workers()
 
@@ -119,7 +119,7 @@ class Solution(Problem):
         sorted_hired = sorted(
             hired, key=lambda h: h.getService().get_id(), reverse=False)
         for h in sorted_hired:
-            aux += h.__str__() + "\n"
+            aux += h + "\n"
 
         aux += ("\n\nObjective value: %.2f" % (self.calculateCost()))
         return aux

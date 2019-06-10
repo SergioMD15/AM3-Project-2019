@@ -1,4 +1,3 @@
-from model.Model import Model
 from model.Provider import Provider
 import sys
 sys.path.append("..")
@@ -31,7 +30,7 @@ class Problem(object):
 
         #### CALCULATE SAME COUNTRY ####
 
-        self.same_country = [[0 for x in range(self.nProviders)] for y in range(self.nProviders)] 
+        self.same_country = [[0 for i in range(self.nProviders)] for j in range(self.nProviders)] 
         for i in range(0, self.nProviders):
             for j in range(0, self.nProviders):
                 if(self.providers[i].get_id() != self.providers[j].get_id()):
@@ -46,3 +45,31 @@ class Problem(object):
     
     def is_same_country(self, p1, p2):
         return self.same_country[p1][p2] or self.same_country[p2][p1]
+
+    def __str__(self):
+        aux = ('Workers: %d \n' % self.workers)
+        aux += ('Num Providers: %d \n' % self.nProviders)
+        aux += ('Cost contracts: [')
+        for i in range(self.nProviders):
+            aux += ' , %d' % self.providers[i].cost_contract
+        aux += ']\n'
+
+        aux += ('Cost workers: [')
+        for i in range(self.nProviders):
+            aux += ' , %d' % self.providers[i].cost_worker
+        aux += ']\n'
+
+        aux += ('Available workers: [')
+        for i in range(self.nProviders):
+            aux += ' , %d' % self.providers[i].available_workers
+        aux += ']\n'
+
+        aux += ('Countries: [')
+        for i in range(self.nProviders):
+            aux += ' , %d' % self.providers[i].country
+        aux += ']\n'
+        
+        aux += ('Cost_1: %d \n' % self.cost_1)
+        aux += ('Cost_2: %d \n' % self.cost_2)
+        aux += ('Cost_3: %d \n' % self.cost_3)
+        return aux

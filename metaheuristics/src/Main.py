@@ -4,7 +4,7 @@ import sys
 from parser.DATParser import DATParser
 from parser.ValidateConfig import ValidateConfig
 from heuristics.Greedy_Solver import Greedy_Solver
-from heuristics.GRASP_Solver import GRASP_Solver
+# from heuristics.GRASP_Solver import GRASP_Solver
 from solver.Problem import Problem
 from solver.Solution import Solution
 
@@ -36,9 +36,9 @@ def run():
             if(config.solver == 'Greedy'):
                 solver = Greedy_Solver()
                 solution = solver.solve(config, problem)
-            elif(config.solver == 'GRASP'):
-                solver = GRASP_Solver()
-                solution = solver.solve(config, problem)
+            # elif(config.solver == 'GRASP'):
+            #     solver = GRASP_Solver()
+            #     solution = solver.solve(config, problem)
 
             solution.saveToFile(config.solutionFile)
         else:

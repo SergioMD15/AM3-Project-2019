@@ -14,8 +14,8 @@ class Hired:
         self.calculate_hired()
 
     def calculate_hired(self):
-        self.hired_base = calculate_base()
-        self.hired_extra = calculate_extra()
+        self.hired_base = self.calculate_base()
+        self.hired_extra = self.calculate_extra()
 
     def calculate_base(self):
         workers = self.workers
@@ -51,7 +51,7 @@ class Hired:
 
     def calculate_cost(self, cost_1, cost_2, cost_3):
         available = self.provider.get_available_workers()
-        contract = 0 if self.provider.none_hired() else self.provider.get_cost_contract()
+        contract = 0 if self.provider.none_hired else self.provider.get_cost_contract()
 
         base = self.hired_base * self.provider.get_cost_worker()
         extra = self.provider.get_first_bracket() * cost_1 \
