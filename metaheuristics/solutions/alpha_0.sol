@@ -1,12 +1,8 @@
 Hirings: 
 
-[Provider: 1, Workers Hired: 0]
-[Provider: 2, Workers Hired: 0]
-[Provider: 3, Workers Hired: 0]
-[Provider: 4, Workers Hired: 0]
-[Provider: 5, Workers Hired: 0]
-[Provider: 6, Workers Hired: 0]
-[Provider: 7, Workers Hired: 0]
-[Provider: 8, Workers Hired: 65]
+[Provider: 1, Workers Hired: 32]
+[Provider: 3, Workers Hired: 10]
+[Provider: 7, Workers Hired: 11]
+[Provider: 8, Workers Hired: 54]
 
-Objective value: 43810 
+Objective value: 56472 

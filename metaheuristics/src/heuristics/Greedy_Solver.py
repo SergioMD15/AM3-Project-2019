@@ -16,42 +16,12 @@ class Greedy_Solver(Solver):
         # get providers
         providers = problem.get_providers()
         sorted_providers = sorted(
-            providers, key=lambda p: p.get_available_workers(), reverse=True)
+            providers, key=lambda p: p.get_id(), reverse=True)
 
         elapsedEvalTime = 0
         evaluatedCandidates = 0
 
         remaining_workers = problem.workers
-
-        # for i in range(len(sorted_providers)):
-
-        #     candidate_hiring = []
-
-        #     candidate_hiring, hiring_elapsedEvalTime, hiring_evaluatedCandidates = solution.find_feasible_hirings(
-        #         sorted_providers, problem)
-        #     elapsedEvalTime += hiring_elapsedEvalTime
-        #     evaluatedCandidates += hiring_evaluatedCandidates
-
-        #     # choose the cheapest hiring
-        #     min_best_hiring = float('infinity')
-        #     choosen_hiring = None
-        #     normalized_candidates = self.calculate_normalized_cost(candidate_hiring, problem.workers)
-        #     for p, cost in normalized_candidates:
-        #         if(min_best_hiring > cost and candidate_hiring[p].workers <= remaining_workers):
-        #             min_best_hiring = cost
-        #             choosen_hiring = p
-
-        #     if(choosen_hiring is None):
-        #         solution.makeInfeasible()
-        #         break
-
-
-        #     solution.hired.append(candidate_hiring[i])
-        #     remaining_workers -= candidate_hiring[i].workers
-            
-        #     print(remaining_workers)
-
-        # for each service taken in sorted order
         for i in range(len(sorted_providers)):
 
             candidate_hiring = []

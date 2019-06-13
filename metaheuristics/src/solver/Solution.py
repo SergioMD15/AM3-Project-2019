@@ -52,9 +52,10 @@ class Solution():
         cost_1 = problem.cost_1
         cost_2 = problem.cost_2
         cost_3 = problem.cost_3
+        
         for provider in sorted_providers:
             if(self.is_in_solution(provider)):
-                    continue
+                continue
             elif(needed_providers == 0):
                 feasible_hires.append(Hired(provider, 0, cost_1, cost_2, cost_3))
                 break
@@ -77,7 +78,7 @@ class Solution():
         valid_options = []
         available = provider.get_available_workers()
 
-        if(objective_workers < available / 2):
+        if(objective_workers == 0):
             valid_options.append(0)
         if (objective_workers >= available / 2):
             valid_options.append(available / 2)

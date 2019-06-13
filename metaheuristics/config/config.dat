@@ -1,8 +1,8 @@
 # --- Common specific parameters ------------------------------------------------------------------------------
 inputDataFile        = data/exam.dat;        # Input DAT file
 solutionFile         = solutions/alpha_0.sol; # Output DAT file (solution)
-solver               = Greedy;                 # Supported solvers: Greedy / GRASP
-maxExecTime          = 30;                   # Maximum execution time in seconds
+solver               = GRASP;                 # Supported solvers: Greedy / GRASP
+maxExecTime          = 60;                   # Maximum execution time in seconds
 
 # --- GRASP specific parameters -------------------------------------------------------------------------------
 alpha                = 0;                   # Alpha parameter for the GRASP solver.
