@@ -1,5 +1,5 @@
 class Hired:
-    def __init__(self, provider, workers):
+    def __init__(self, provider, workers, cost_1, cost_2, cost_3):
         available = provider.get_available_workers()
         if(2 * available >= workers):
             if(workers <= available):
@@ -13,9 +13,17 @@ class Hired:
 
         self.calculate_hired()
 
+        self.cost_1 = cost_1
+        self.cost_2 = cost_2
+        self.cost_3 = cost_3
+
+        self.cost = self.calculate_cost()
+
     def calculate_hired(self):
         self.hired_base = self.calculate_base()
         self.hired_extra = self.calculate_extra()
+        
+        self.provider.set_brackets(self.hired_base + self.hired_extra)
 
     def calculate_base(self):
         workers = self.workers
@@ -39,7 +47,6 @@ class Hired:
         available = self.provider.get_available_workers()
 
         extra = 0 if workers < available else workers - available
-        self.provider.set_extra(extra)
 
         return extra
 
@@ -49,17 +56,20 @@ class Hired:
     def get_workers(self):
         return self.workers
 
-    def calculate_cost(self, cost_1, cost_2, cost_3):
+    def get_cost(self):
+        return self.cost
+
+    def calculate_cost(self):
         available = self.provider.get_available_workers()
         contract = 0 if self.provider.none_hired else self.provider.get_cost_contract()
 
-        base = self.hired_base * self.provider.get_cost_worker()
-        extra = self.provider.get_first_bracket() * cost_1 \
-            + self.provider.get_second_bracket() * cost_2 \
-            + self.provider.get_third_bracket() * cost_3
-        workers = base + extra
+        hired = (self.hired_base + self.hired_extra) * self.provider.get_cost_worker()
+        taxes = self.provider.get_first_bracket() * self.cost_1 \
+            + self.provider.get_second_bracket() * self.cost_2 \
+            + self.provider.get_third_bracket() * self.cost_3
+        workers = hired + taxes
 
         return contract + workers
 
     def __str__(self):
-        return "[Provider: %d, Workers Hired: %d]" % (self.get_provider().get_id(), self.workers())
+        return "[Provider: %d, Workers Hired: %d]" % (self.get_provider().get_id() + 1, self.workers)

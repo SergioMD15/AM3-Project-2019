@@ -39,7 +39,6 @@ def run():
             # elif(config.solver == 'GRASP'):
             #     solver = GRASP_Solver()
             #     solution = solver.solve(config, problem)
-
             solution.saveToFile(config.solutionFile)
         else:
             print('Instance is infeasible.')

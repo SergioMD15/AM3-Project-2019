@@ -1,19 +1,12 @@
-Assignments: 
+Hirings: 
 
-[Service: 0, Bus: 6]
-[Service: 1, Bus: 5]
-[Service: 2, Bus: 4]
-[Service: 3, Bus: 3]
-[Service: 4, Bus: 2]
+[Provider: 1, Workers Hired: 0]
+[Provider: 2, Workers Hired: 0]
+[Provider: 3, Workers Hired: 0]
+[Provider: 4, Workers Hired: 0]
+[Provider: 5, Workers Hired: 0]
+[Provider: 6, Workers Hired: 0]
+[Provider: 7, Workers Hired: 0]
+[Provider: 8, Workers Hired: 65]
 
-
-Drives: 
-
-[Service: 0, Driver: 2]
-[Service: 1, Driver: 3]
-[Service: 2, Driver: 4]
-[Service: 3, Driver: 0]
-[Service: 4, Driver: 1]
-
-
-Objective value: 112.50
+Objective value: 43810 

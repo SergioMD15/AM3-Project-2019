@@ -14,8 +14,13 @@ class Provider:
         self.second_bracket = 0
         self.third_bracket = 0
 
+        self.incompatibilities = 0
+
     def get_id(self):
         return self.id
+
+    def get_incompatibilities():
+        return self.incompatibilities
 
     def get_cost_worker(self):
         return self.cost_worker
@@ -53,15 +58,14 @@ class Provider:
         self.hired_half = False
         self.hired_none = True
 
-    def set_extra(self, extra_workers):
-        self.set_first_bracket(
-            0 if extra_workers == 0 else min(5, extra_workers))
+    def set_brackets(self, workers):
+        self.set_first_bracket(min(5, workers))
 
         self.set_second_bracket(
-            0 if (self.first_bracket < 5) else min(5, extra_workers - 5))
+            0 if (self.first_bracket < 5) else min(5, workers - 5))
 
         self.set_third_bracket(
-            0 if (self.second_bracket < 5) else extra_workers - 10)
+            0 if (self.second_bracket < 5) else workers - 10)
 
     def get_first_bracket(self):
         return self.first_bracket

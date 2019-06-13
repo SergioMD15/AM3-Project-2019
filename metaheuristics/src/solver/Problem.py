@@ -35,6 +35,8 @@ class Problem(object):
             for j in range(0, self.nProviders):
                 if(self.providers[i].get_id() != self.providers[j].get_id()):
                     if(self.providers[i].get_country() == self.providers[j].get_country()):
+                        self.providers[i].incompatibilities += 1
+                        self.providers[j].incompatibilities += 1
                         self.same_country[i][j] = 1
 
     def get_providers(self):
@@ -44,7 +46,7 @@ class Problem(object):
         return sum(self.available_workers) > self.workers
     
     def is_same_country(self, p1, p2):
-        return self.same_country[p1][p2] or self.same_country[p2][p1]
+        return self.same_country[p1.get_id()][p2.get_id()] or self.same_country[p2.get_id()][p1.get_id()]
 
     def __str__(self):
         aux = ('Workers: %d \n' % self.workers)

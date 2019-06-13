@@ -21,7 +21,7 @@ class GRASP_Solver(Solver):
 
         # compute boundary cost as a function of the minimum and maximum cost and the alpha parameter
         alpha = config.alpha
-        minCost = sortedCL[0].calculateCost()
+        minCost = sortedCL[0].get_cost()
         maxCost = sortedCL[len(sortedCL)-1].calculateCost()
         boundaryCost = minCost + \
             (maxCost - minCost) * alpha
