@@ -1,10 +1,10 @@
-wr=47;
-nProviders=2;
+wr=53;
+nProviders=3;
 
-cost_worker=[ 24 41 ];
-available_workers=[ 6 39 ];
-cost_contract=[ 2928 2228 ];
-country=[ 2 6 ];
+cost_worker=[ 60 15 12 ];
+available_workers=[ 33 31 36 ];
+cost_contract=[ 1255 2128 2139 ];
+country=[ 5 1 5 ];
 cost_1=5;
 cost_2=7;
 cost_3=300;

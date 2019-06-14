@@ -19,6 +19,7 @@ class Solution():
         # super(Solution, self).__init__(inputData)
         self.feasible = True
         self.hired = []
+        self.needed_workers = inputData.wr
 
     def makeInfeasible(self):
         self.feasible = False
@@ -33,6 +34,9 @@ class Solution():
             total_cost += hired.get_cost()
         return total_cost
 
+    def get_remaining_workers(self):
+        return self.needed_workers - sum([i.workers for i in self.hired])
+
     def find_hired(self, provider):
         for element in self.hired:
             if element.get_provider().get_id() == provider.get_id():
@@ -42,6 +46,11 @@ class Solution():
         hire_provider = self.find_hired(provider)
         if(hire_provider != None):
             self.hired.remove(hire_provider)
+    
+    def add_hired(self, hiring):
+        hire_provider = self.find_hired(hiring.provider)
+        if(hire_provider == None):
+            self.hired.append(hiring)
 
     def find_feasible_hirings(self, sorted_providers, problem, needed_providers):
         startEvalTime = time.time()

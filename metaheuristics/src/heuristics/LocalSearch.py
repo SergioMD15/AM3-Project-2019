@@ -1,8 +1,7 @@
 
 import copy
 import time
-from model.Assigns import Assigns
-from model.Drives import Drives
+from model.Hired import Hired
 import sys
 sys.path.append("..")
 
@@ -18,98 +17,101 @@ class LocalSearch(object):
         self.elapsedTime = 0
         self.iterations = 0
 
+    def find_feasible_hirings_cheap(self, hiring):
+        valid_options = []
+        cost_1 = hiring.cost_1
+        cost_2 = hiring.cost_2
+        cost_3 = hiring.cost_3
+        provider = hiring.get_provider()
+        available = provider.get_available_workers()
+        workers = hiring.workers
 
-    def getServiceCost(self, service, solution):
-        solServices = self.getSolutionServices(solution)
+        if (workers == 0):
+            valid_options.append(Hired(provider,0, cost_1, cost_2, cost_3))
+        if (workers <= available / 2):
+            valid_options.append(Hired(provider, available / 2, cost_1, cost_2, cost_3))
+        if (workers <= available):
+            valid_options.append(Hired(provider, available, cost_1, cost_2, cost_3))
+        if (workers >= available):
+            valid_options = valid_options + [Hired(provider, i, cost_1, cost_2, cost_3) for i in list(range(workers, available * 2))]
+        return valid_options
 
-        assigns = solution.get_hiring_assigned(service)
-        drives = solution.getServiceDriven(service)
+    def find_feasible_hirings_expensive(self, hiring):
+        valid_options = []
+        cost_1 = hiring.cost_1
+        cost_2 = hiring.cost_2
+        cost_3 = hiring.cost_3
+        provider = hiring.get_provider()
+        available = provider.get_available_workers()
+        workers = hiring.workers
 
+        if(workers == 0):
+            valid_options.append(Hired(provider, 0, cost_1, cost_2, cost_3))
+        if (workers >= available / 2):
+            valid_options.append(Hired(provider, available / 2, cost_1, cost_2, cost_3))
+        if (workers >= available):
+            valid_options = valid_options + [Hired(provider, i, cost_1, cost_2, cost_3) for i in list(range(available, workers))]
+        return valid_options
 
-        busCost = service.getDuration() * assigns.getBus().getEurosMin() + \
-            service.getKm() * assigns.getBus().getEurosKm()
-
-        extra = self.calculateExtra(drives.getDriver(), solution.drives)
-        ratio = extra / len(solServices)
-
-        driverCost = service.getDuration() - ratio * drives.getDriver().getCBM() + \
-            ratio * drives.getDriver().getCEM()
-
-        return busCost + driverCost
-
-    def getSolutionServices(self, solution):
-        solServices = []
-        for s in solution.drives:
-            solServices.append(s.getService())
-        return solServices
-
-    def isFeasibleAssign(self, service, bus, solution):
-        aux = 0
-        for a in solution.assignments:
-            if a.getBus() == bus:
-                aux += solution.collides[service.getId()][a.getService().getId()]
-        return bus.getCapacity() >= service.getPassengers() and aux == 0
-
-    def isFeasibleDrives(self, service, driver, solution):
-        timeWorked = 0
-        for d in solution.drives:
-            if d.getDriver() == driver:
-                timeWorked += d.getService().getDuration()
-        checkCollisions = 0
-        for d in solution.drives:
-            if d.getDriver() == driver:
-                checkCollisions += solution.collides[service.getId()
-                                                     ][d.getService().getId()]
-        timeWorked += service.getDuration()
-        return d.getDriver().getMaxMinutes() >= timeWorked and checkCollisions == 0
-
-    def calculateExtra(self, driver, drives):
-        aux = 0
-        for d in drives:
-            if(d.getDriver() == driver):
-                aux += d.getService().getDuration()
-        return max(0, aux - driver.getBM())
+    def is_incompatible(self, hiring, hirings_list):
+        already_hiring = [i[0].provider for i in hirings_list if (i[0].workers > 0 and hiring.provider != i[0].provider)]
+        if(len(already_hiring) == 0):
+            return False
+        for tp in already_hiring:
+            if(tp.get_country == hiring.provider.get_country()):
+                return True
+        return False
 
     def exploreNeighborhood(self, solution):
-        buses = solution.getBuses()
-        drivers = solution.getDrivers()
-        services = solution.getServices()
-
+        hirings = solution.hired
         curCost = solution.calculateCost()
         bestNeighbor = copy.deepcopy(solution)
 
+        # We find the most expensive element in solution
+        sorted_hirings = sorted(hirings, key=lambda h: h.cost, reverse=True)
+        expensive_h = sorted_hirings[0]
+
+        cheapest = [(i,i.get_cost_hiring()) for i in hirings if i.workers < i.provider.get_available_workers() * 2]
+        # We look for the potentially cheapest element in solution not having incompatibilities
+        sorted_cheapest = sorted(cheapest, key=lambda h: h[1], reverse=False)
+        cheapest_h = None
+        for hiring in sorted_cheapest:
+            # print(hiring[0].provider)
+            if(not self.is_incompatible(hiring[0], sorted_cheapest)):
+                cheapest_h = hiring[0]
+                break
+        if(cheapest_h == None):
+            return bestNeighbor
+
+        feasible_cheapest = self.find_feasible_hirings_cheap(cheapest_h)
+        feasible_expensive = self.find_feasible_hirings_expensive(expensive_h)
+        remaining_workers = solution.get_remaining_workers()
+
         if(self.nhStrategy == 'Reassignment'):
-            sortedServices = sorted(
-                services, key=lambda service: self.getServiceCost(service, bestNeighbor), reverse=False)
-
-            for service in sortedServices:
-                for bus in buses:
-                    if(self.isFeasibleAssign(service, bus, bestNeighbor)):
+            sol = False
+            for i in feasible_cheapest:
+                for j in feasible_expensive:
+                    difference = -cheapest_h.workers + i.workers - expensive_h.workers + j.workers - remaining_workers
+                    if(remaining_workers >= difference and difference >= 0):
                         auxSolution = copy.deepcopy(bestNeighbor)
-                        auxSolution.removeAssign(service)
-                        auxSolution.assignments.append(Assigns(service, bus))
-                        auxCost = auxSolution.calculateCost()
-                        if(auxCost <= curCost):
+                        
+                        if(i.cost + j.cost <= cheapest_h.cost + expensive_h.cost):
+                            auxSolution.remove_hired(cheapest_h.provider)
+                            auxSolution.add_hired(i)
+                            auxSolution.remove_hired(expensive_h.provider)
+                            auxSolution.add_hired(j)
+                        if(auxSolution.calculateCost() <= curCost):
                             bestNeighbor = auxSolution
-                            curCost = auxCost
+                            curCost = auxSolution.calculateCost()
+                            sol = True
                             break
-                
-                for driver in drivers:
-                    if(self.isFeasibleDrives(service, driver, bestNeighbor)):
-                        auxSolution = copy.deepcopy(bestNeighbor)
-                        auxSolution.removeDrives(service)
-                        auxSolution.drives.append(Drives(service, driver))
-                        auxCost = auxSolution.calculateCost()
-                        if(auxCost <= curCost):
-                            bestNeighbor = auxSolution
-                            curCost = auxCost
-                            break
-
+                if(sol):
+                    break
         else:
             raise Exception('Unsupported NeighborhoodStrategy(%s)' %
                             self.nhStrategy)
-
         return(bestNeighbor)
+
 
     def run(self, solution):
         if(not self.enabled):
@@ -126,12 +128,12 @@ class LocalSearch(object):
         # keep iterating while improvements are found
         keepIterating = True
         while(keepIterating):
-             keepIterating = False
-             iterations += 1
+            keepIterating = False
+            iterations += 1
 
-             neighbor = self.exploreNeighborhood(bestSolution)
-             curCost = neighbor.calculateCost()
-             if(bestCost > curCost):
+            neighbor = self.exploreNeighborhood(bestSolution)
+            curCost = neighbor.calculateCost()
+            if(bestCost > curCost):
                 bestSolution = neighbor
                 bestCost = curCost
                 keepIterating = True

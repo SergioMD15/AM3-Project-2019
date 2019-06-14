@@ -2,7 +2,7 @@
 import random
 import time
 import sys
-# from heuristics.LocalSearch import LocalSearch
+from heuristics.LocalSearch import LocalSearch
 sys.path.append("..")
 from solver.Solver import Solver
 from solver.Solution import Solution
@@ -95,7 +95,7 @@ class GRASP_Solver(Solver):
         total_evaluatedCandidates = 0
         remaining_workers = problem.workers
 
-        # localSearch = LocalSearch(config)
+        localSearch = LocalSearch(config)
 
         iteration = 0
         
@@ -119,7 +119,7 @@ class GRASP_Solver(Solver):
             if(not solution.isFeasible()):
                 continue
 
-            # solution = localSearch.run(solution)
+            solution = localSearch.run(solution)
 
             solutionCost = solution.calculateCost()
             if(problem.workers - workers <= remaining_workers and solutionCost < bestCost):
@@ -140,7 +140,7 @@ class GRASP_Solver(Solver):
         print('  Total Eval. Time     ', total_elapsedEvalTime, 's')
         print('  Avg. Time / Candidate', avg_evalTimePerCandidate, 'ms')
 
-        # localSearch.printPerformance()
+        localSearch.printPerformance()
 
         return(bestSolution)
 

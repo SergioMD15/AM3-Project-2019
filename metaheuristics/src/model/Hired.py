@@ -19,6 +19,12 @@ class Hired:
 
         self.cost = self.calculate_cost()
 
+    def get_cost_hiring(self):
+        if(self.workers == 0):
+            return self.provider.get_cost_contract() + self.provider.get_cost_worker()
+        return self.provider.get_cost_worker()
+
+
     def calculate_hired(self):
         self.hired_base = self.calculate_base()
         self.hired_extra = self.calculate_extra()

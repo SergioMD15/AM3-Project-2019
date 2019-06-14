@@ -1,4 +1,4 @@
-# from heuristics.LocalSearch import LocalSearch
+from heuristics.LocalSearch import LocalSearch
 from solver.Solution import Solution
 from solver.Solver import Solver
 import sys
@@ -45,7 +45,7 @@ class Greedy_Solver(Solver):
                 if(remaining_workers == 0):
                     solution.hired.append(choosen_hiring)
                 else:
-                    solution.makeInfeasible()
+                    # solution.makeInfeasible()
                     break
 
 
@@ -77,15 +77,9 @@ class Greedy_Solver(Solver):
         max_workers = max(workers)
         normalized_workers = [float(i) - min_workers/(max_workers - min_workers) for i in workers]
 
-        # incompatibilities = [i.provider.incompatibilities for i in candidates]
-        # min_incompatibilities = min(incompatibilities)
-        # max_incompatibilities = max(incompatibilities)
-        # normalized_incompatibilities = [float(i) - min_incompatibilities/(max_incompatibilities - min_incompatibilities) for i in incompatibilities]
-
         result = []
 
         for i in range(len(candidates)):
-            # result.append((i, normalized_workers[i] * 0.7 + normalized_cost[i] * 0.25 + normalized_incompatibilities[i] * 0.05))
             result.append((i, normalized_workers[i] * 0.7 + normalized_cost[i] * 0.25))
 
         return result
@@ -104,27 +98,27 @@ class Greedy_Solver(Solver):
 
         print('Greedy solution: ', solutionValue)
 
-        # localSearch = LocalSearch(config)
-        # solution = localSearch.run(solution)
+        localSearch = LocalSearch(config)
+        solution = localSearch.run(solution)
 
-        # solutionValue = solution.calculateCost()
+        solutionValue = solution.calculateCost()
 
-        # print('Local search solution: ', solutionValue)
+        print('Local search solution: ', solutionValue)
 
-        # self.writeLogLine(solutionValue, 1)
+        self.writeLogLine(solutionValue, 1)
 
-        # avg_evalTimePerCandidate = 0.0
-        # if (evaluatedCandidates != 0):
-        #     avg_evalTimePerCandidate = 1000.0 * \
-        #         elapsedEvalTime / float(evaluatedCandidates)
+        avg_evalTimePerCandidate = 0.0
+        if (evaluatedCandidates != 0):
+            avg_evalTimePerCandidate = 1000.0 * \
+                elapsedEvalTime / float(evaluatedCandidates)
 
         print('')
         print('Greedy Candidate Evaluation Performance:')
         print('  Num. Candidates Eval.', evaluatedCandidates)
         print('  Total Eval. Time     ', elapsedEvalTime, 's')
-        # print('  Avg. Time / Candidate', avg_evalTimePerCandidate, 'ms')
+        print('  Avg. Time / Candidate', avg_evalTimePerCandidate, 'ms')
 
-        # localSearch.printPerformance()
+        localSearch.printPerformance()
 
         return(solution)
 
