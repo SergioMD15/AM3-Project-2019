@@ -71,7 +71,7 @@ subject to{
 
 	 // set z
 	 z == sum(p in P) (cost_contract[p]*some_hired[p] + cost_worker[p]*(hired_base[p] + hired_extra[p])
-	  + hired_1[p]*cost_1 + hired_2[p] * cost_2 + hired_3[p]*cost_3);
+	  + hired_1[p]*cost_1 + hired_2[p] * cost_2 + hired_3[p]*cost_3 + hired_extra[p]*cost_3);
 	  
 	// Constraint 1
 	// hire exactly the required number of workers wr
@@ -92,7 +92,7 @@ subject to{
 	forall(p in P) available_workers[p]/2 * (some_hired[p] + all_hired[p]) == hired_base[p];
 	
 	// Constraint 6
-	forall(p in P) hired_1[p] + hired_2[p] + hired_3[p] == hired_base[p];
+	forall(p in P) hired_1[p] + hired_2[p] + hired_3[p] == hired_base[p] + hired_extra[p];
 	
 	// Constraint 7
 	// hired workers belonging to the 1st bracket can be at most 5
