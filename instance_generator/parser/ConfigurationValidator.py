@@ -65,7 +65,7 @@ class ConfigurationValidator:
             raise Exception('minCountryValue has to be a positive integer value.' % str(minCountryValue))
 
         maxCountryValue = data.maxCountryValue
-        if (not isinstance(maxCountryValue, int) or (maxCountryValue <= 0) or (maxCountryValue < minCountryValue) or (maxCountryValue != maxNumProviders)):
+        if (not isinstance(maxCountryValue, int) or (maxCountryValue <= 0) or (maxCountryValue < minCountryValue)):
             raise Exception('maxCountryValue has to be a positive integer value.' % str(maxCountryValue))
 
         cost_1 = data.cost_1
