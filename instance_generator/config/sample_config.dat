@@ -1,21 +1,21 @@
 instancesDirectory=Instances;
-fileName=configuration;
+fileName=configuration_100;
 fileNameExtension=dat;
 
-minNumWorkers=10;
-maxNumWorkers=65;
-minNumProviders=1;
-maxNumProviders=8;
-minCostWorker=100;
-maxCostWorker=412;
+minNumWorkers=10000;
+maxNumWorkers=15000;
+minNumProviders=100;
+maxNumProviders=100;
+minCostWorker=450;
+maxCostWorker=650;
 
-minAvailableWorkers=6;
-maxAvailableWorkers=40;
-minCostContract=800;
-maxCostContract=3000;
-minCountryValue=1;
-maxCountryValue=8;
+minAvailableWorkers=150;
+maxAvailableWorkers=250;
+minCostContract=200;
+maxCostContract=300;
+minCountryValue=20;
+maxCountryValue=50;
 
 cost_1=5;
 cost_2=7;
-cost_3=300;
+cost_3=10;
