@@ -41,7 +41,7 @@ class GRASP_Solver(Solver):
 
         # get providers and sort them by available workers
         providers = problem.get_providers()
-        sorted_hirings = sorted(
+        sorted_providers = sorted(
             providers, key=lambda p: p.get_id(), reverse=True)
 
         elapsedEvalTime = 0
@@ -54,22 +54,9 @@ class GRASP_Solver(Solver):
             candidate_hirings = []
 
             candidate_hirings, hirings_elapsedEvalTime, hirings_evaluatedCandidates = solution.find_feasible_hirings(
-                sorted_hirings, problem, remaining_workers)
+                sorted_providers, problem, remaining_workers)
             elapsedEvalTime += hirings_elapsedEvalTime
             evaluatedCandidates += hirings_evaluatedCandidates
-
-            # choose the cheapest hiring
-            min_best_hiring = float('infinity')
-            choosen_hiring = None
-            for h in candidate_hirings:
-                difference = remaining_workers - h.workers
-                if(difference >= 0 and min_best_hiring > difference):
-                    min_best_hiring = difference
-                    choosen_hiring = h
-
-            if(choosen_hiring is None):
-                solution.makeInfeasible()
-                break
 
             ### UP TO HERE, THE CONSTRUCTIVE PHASE IS EXACTLY LIKE THE GREEDY ONE ##
 

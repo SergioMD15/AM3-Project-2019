@@ -1,6 +1,7 @@
 from heuristics.LocalSearch import LocalSearch
 from solver.Solution import Solution
 from solver.Solver import Solver
+from model.Hired import Hired
 import sys
 sys.path.append("..")
 
@@ -16,7 +17,7 @@ class Greedy_Solver(Solver):
         # get providers
         providers = problem.get_providers()
         sorted_providers = sorted(
-            providers, key=lambda p: p.get_id(), reverse=True)
+            providers, key=lambda p: p.get_id(), reverse=False)
 
         elapsedEvalTime = 0
         evaluatedCandidates = 0
@@ -33,24 +34,29 @@ class Greedy_Solver(Solver):
             evaluatedCandidates += hiring_evaluatedCandidates
 
             # choose the cheapest hiring
-            min_best_hiring = float('infinity')
+            best_hiring = float('infinity')
             choosen_hiring = None
             for candidate in candidate_hiring:
                 difference = remaining_workers - candidate.workers
-                if(difference >= 0 and min_best_hiring > difference):
-                    min_best_hiring = difference
+                if(difference >= 0 and best_hiring > difference):
+                    best_hiring = difference
                     choosen_hiring = candidate
 
             if(choosen_hiring is None):
                 if(remaining_workers == 0):
-                    solution.hired.append(choosen_hiring)
+                    solution.add_hired(Hired(sorted_providers[i], 0, problem.cost_1, problem.cost_2, problem.cost_3))
                 else:
-                    # solution.makeInfeasible()
+                    solution.makeInfeasible()
                     break
-
 
             solution.hired.append(choosen_hiring)
             remaining_workers -= choosen_hiring.workers
+
+        missing_providers = [i.provider for i in candidate_hiring]
+        not_added = list(set(sorted_providers) ^ set(missing_providers))
+
+        for provider in not_added:
+            solution.add_hired(Hired(provider, 0, problem.cost_1, problem.cost_2, problem.cost_3))
 
         return (solution, elapsedEvalTime, evaluatedCandidates)
 

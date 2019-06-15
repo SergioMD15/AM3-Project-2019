@@ -76,7 +76,6 @@ class LocalSearch(object):
         sorted_cheapest = sorted(cheapest, key=lambda h: h[1], reverse=False)
         cheapest_h = None
         for hiring in sorted_cheapest:
-            # print(hiring[0].provider)
             if(not self.is_incompatible(hiring[0], sorted_cheapest)):
                 cheapest_h = hiring[0]
                 break
@@ -91,20 +90,20 @@ class LocalSearch(object):
             sol = False
             for i in feasible_cheapest:
                 for j in feasible_expensive:
-                    difference = -cheapest_h.workers + i.workers - expensive_h.workers + j.workers - remaining_workers
+                    difference = i.workers - cheapest_h.workers + j.workers - expensive_h.workers - remaining_workers
                     if(remaining_workers >= difference and difference >= 0):
                         auxSolution = copy.deepcopy(bestNeighbor)
-                        
                         if(i.cost + j.cost <= cheapest_h.cost + expensive_h.cost):
                             auxSolution.remove_hired(cheapest_h.provider)
                             auxSolution.add_hired(i)
                             auxSolution.remove_hired(expensive_h.provider)
                             auxSolution.add_hired(j)
-                        if(auxSolution.calculateCost() <= curCost):
-                            bestNeighbor = auxSolution
-                            curCost = auxSolution.calculateCost()
-                            sol = True
-                            break
+                            if(auxSolution.calculateCost() <= curCost and auxSolution.get_remaining_workers() <= remaining_workers):
+                                bestNeighbor = auxSolution
+                                curCost = auxSolution.calculateCost()
+                                sol = True
+                                remaining_workers = auxSolution.get_remaining_workers()
+                                break
                 if(sol):
                     break
         else:
