@@ -8,9 +8,9 @@ class Solver(object):
         logFields.append({'id': 'elapTime',   'name': 'Elap. Time (s)',
                           'headerformat': '{:>14s}', 'valueformat': '{:>14.8f}'})
         logFields.append({'id': 'objValue',   'name': 'Obj. Value',
-                          'headerformat': '{:>10s}', 'valueformat': '{:>10.8f}'})
+                          'headerformat': '{:>10s}', 'valueformat': '{:>10.1f}'})
         logFields.append({'id': 'workers',   'name': 'Workers Hired',
-                          'headerformat': '{:>10s}', 'valueformat': '{:>10.8f}'})
+                          'headerformat': '{:>10s}', 'valueformat': '{:>10.1f}'})
         logFields.append({'id': 'iterations', 'name': 'Iterations',
                           'headerformat': '{:>12s}', 'valueformat': '{:>12d}'})
         self.logger = Logger(fields=logFields)

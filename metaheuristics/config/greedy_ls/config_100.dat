@@ -1,0 +1,11 @@
+# --- Common specific parameters ------------------------------------------------------------------------------
+inputDataFile        = data/configuration_100.dat;          # Input DAT file
+solutionFile         = solutions/greedy_ls/instance_100.sol; # Output DAT file (solution)
+solver               = Greedy;                 # Supported solvers: Greedy / GRASP
+maxExecTime          = 300;                     # Maximum execution time in seconds
+
+# --- GRASP specific parameters -------------------------------------------------------------------------------
+alpha                = 0.3;                   # Alpha parameter for the GRASP solver.
+
+# --- Local Search specific parameters ------------------------------------------------------------------------
+localSearch          = True;                  # Enable local search?

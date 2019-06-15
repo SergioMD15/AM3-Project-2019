@@ -1,0 +1,752 @@
+data/configuration_10.dat
+
+*     0     0      integral     0    12213.0000    12213.0000       30 --> Iterations the last one
+Total (root+branch&cut) =    0.01 sec. (1.58 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 12213
+Needed workers: 81
+Providers: 10
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 26]
+[ Provider: 4, Workers hired: 16]
+[ Provider: 5, Workers hired: 15]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 24]
+
+<<< post process
+
+
+
+
+data/configuration_100.dat
+
+
+      0     0   1.59775e+08    72                     Cuts: 4      510
+
+Total (root+branch&cut) =    0.10 sec. (77.39 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.599566e+8
+Needed workers: 13276
+Providers: 100
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 418]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 366]
+[ Provider: 11, Workers hired: 408]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 458]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 372]
+[ Provider: 18, Workers hired: 478]
+[ Provider: 19, Workers hired: 486]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 466]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 462]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 496]
+[ Provider: 33, Workers hired: 490]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 420]
+[ Provider: 39, Workers hired: 328]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 428]
+[ Provider: 45, Workers hired: 0]
+[ Provider: 46, Workers hired: 382]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 450]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 376]
+[ Provider: 55, Workers hired: 348]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 418]
+[ Provider: 60, Workers hired: 334]
+[ Provider: 61, Workers hired: 0]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 496]
+[ Provider: 66, Workers hired: 0]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 450]
+[ Provider: 72, Workers hired: 0]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 440]
+[ Provider: 78, Workers hired: 0]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 440]
+[ Provider: 81, Workers hired: 0]
+[ Provider: 82, Workers hired: 394]
+[ Provider: 83, Workers hired: 0]
+[ Provider: 84, Workers hired: 0]
+[ Provider: 85, Workers hired: 316]
+[ Provider: 86, Workers hired: 0]
+[ Provider: 87, Workers hired: 474]
+[ Provider: 88, Workers hired: 0]
+[ Provider: 89, Workers hired: 468]
+[ Provider: 90, Workers hired: 0]
+[ Provider: 91, Workers hired: 478]
+[ Provider: 92, Workers hired: 468]
+[ Provider: 93, Workers hired: 0]
+[ Provider: 94, Workers hired: 0]
+[ Provider: 95, Workers hired: 0]
+[ Provider: 96, Workers hired: 0]
+[ Provider: 97, Workers hired: 0]
+[ Provider: 98, Workers hired: 0]
+[ Provider: 99, Workers hired: 0]
+[ Provider: 100, Workers hired: 468]
+
+<<< post process
+
+
+
+
+data/configuration_20.dat
+
+
+
+
+
+      0     0        cutoff          41635.0000    41635.0000      101    0.00%
+
+Total (root+branch&cut) =    0.03 sec. (14.44 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 41635
+Needed workers: 206
+Providers: 20
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 20]
+[ Provider: 3, Workers hired: 34]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 41]
+[ Provider: 14, Workers hired: 48]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 33]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 30]
+[ Provider: 20, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_30.dat
+
+
+      0     0        cutoff         340851.0000                    124    0.00%
+
+Total (root+branch&cut) =    0.02 sec. (9.30 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 340851
+Needed workers: 511
+Providers: 30
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 51]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 52]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 50]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 44]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 38]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 26]
+[ Provider: 17, Workers hired: 60]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 58]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 52]
+[ Provider: 26, Workers hired: 22]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 58]
+[ Provider: 30, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_40.dat
+
+
+      0     0        cutoff         679743.0000   679743.0000      201    0.00%
+
+Total (root+branch&cut) =    0.03 sec. (13.96 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 679743
+Needed workers: 736
+Providers: 40
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 76]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 40]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 74]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 76]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 78]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 0]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 80]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 0]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 40]
+[ Provider: 36, Workers hired: 66]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 68]
+[ Provider: 39, Workers hired: 62]
+[ Provider: 40, Workers hired: 76]
+
+<<< post process
+
+
+
+
+data/configuration_50.dat
+
+      0     0  1548975.0000    11  1550936.0000  1550739.5000      316    0.01%
+      0     0        cutoff        1550936.0000                    320    0.00%
+Elapsed time = 0.05 sec. (26.80 ticks, tree = 0.01 MB, solutions = 7)
+
+Total (root+branch&cut) =    0.05 sec. (26.85 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1550936
+Needed workers: 1147
+Providers: 50
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 100]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 107]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 92]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 0]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 110]
+[ Provider: 32, Workers hired: 104]
+[ Provider: 33, Workers hired: 0]
+[ Provider: 34, Workers hired: 120]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 118]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 112]
+[ Provider: 40, Workers hired: 112]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 70]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 102]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_60.dat
+
+
+      0     0        cutoff        1637343.0000  1637343.0000      279    0.00%
+
+Total (root+branch&cut) =    0.05 sec. (28.17 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1637343
+Needed workers: 1183
+Providers: 60
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 88]
+[ Provider: 3, Workers hired: 116]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 118]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 114]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 0]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 114]
+[ Provider: 33, Workers hired: 0]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 120]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 72]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 120]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 0]
+[ Provider: 46, Workers hired: 100]
+[ Provider: 47, Workers hired: 117]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 0]
+[ Provider: 55, Workers hired: 104]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_70.dat
+
+
+      0     0        cutoff         1.29733e+07   1.29733e+07      317    0.00%
+
+Total (root+branch&cut) =    0.04 sec. (31.21 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.297326e+7
+Needed workers: 3546
+Providers: 70
+Hirings:
+[ Provider: 1, Workers hired: 184]
+[ Provider: 2, Workers hired: 196]
+[ Provider: 3, Workers hired: 194]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 182]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 184]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 87]
+[ Provider: 11, Workers hired: 186]
+[ Provider: 12, Workers hired: 176]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 182]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 192]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 0]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 168]
+[ Provider: 29, Workers hired: 165]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 196]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 174]
+[ Provider: 45, Workers hired: 182]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 188]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 174]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 186]
+[ Provider: 55, Workers hired: 0]
+[ Provider: 56, Workers hired: 168]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 0]
+[ Provider: 61, Workers hired: 0]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 0]
+[ Provider: 66, Workers hired: 182]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_80.dat
+
+
+      0     0        cutoff         3.09496e+07   3.09496e+07      335    0.00%
+
+Total (root+branch&cut) =    0.06 sec. (37.45 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 3.09496e+7
+Needed workers: 5348
+Providers: 80
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 186]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 174]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 180]
+[ Provider: 11, Workers hired: 162]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 168]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 192]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 192]
+[ Provider: 23, Workers hired: 186]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 182]
+[ Provider: 26, Workers hired: 194]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 184]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 190]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 200]
+[ Provider: 34, Workers hired: 166]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 192]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 188]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 176]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 196]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 182]
+[ Provider: 55, Workers hired: 0]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 192]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 192]
+[ Provider: 61, Workers hired: 170]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 162]
+[ Provider: 65, Workers hired: 198]
+[ Provider: 66, Workers hired: 188]
+[ Provider: 67, Workers hired: 196]
+[ Provider: 68, Workers hired: 188]
+[ Provider: 69, Workers hired: 172]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 0]
+[ Provider: 72, Workers hired: 0]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 0]
+[ Provider: 78, Workers hired: 200]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 0]
+
+<<< post process
+
+
+
+
+data/configuration_90.dat
+
+
+      0     0        cutoff         1.46126e+08   1.46126e+08      442    0.00%
+
+Total (root+branch&cut) =    0.08 sec. (67.86 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.461257e+8
+Needed workers: 10790
+Providers: 90
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 380]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 400]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 334]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 398]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 344]
+[ Provider: 25, Workers hired: 372]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 384]
+[ Provider: 28, Workers hired: 342]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 368]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 308]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 384]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 372]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 380]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 310]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 300]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 370]
+[ Provider: 53, Workers hired: 382]
+[ Provider: 54, Workers hired: 0]
+[ Provider: 55, Workers hired: 384]
+[ Provider: 56, Workers hired: 330]
+[ Provider: 57, Workers hired: 386]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 388]
+[ Provider: 60, Workers hired: 348]
+[ Provider: 61, Workers hired: 326]
+[ Provider: 62, Workers hired: 334]
+[ Provider: 63, Workers hired: 360]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 0]
+[ Provider: 66, Workers hired: 322]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 0]
+[ Provider: 72, Workers hired: 396]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 0]
+[ Provider: 78, Workers hired: 0]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 0]
+[ Provider: 81, Workers hired: 0]
+[ Provider: 82, Workers hired: 0]
+[ Provider: 83, Workers hired: 0]
+[ Provider: 84, Workers hired: 0]
+[ Provider: 85, Workers hired: 0]
+[ Provider: 86, Workers hired: 0]
+[ Provider: 87, Workers hired: 0]
+[ Provider: 88, Workers hired: 360]
+[ Provider: 89, Workers hired: 358]
+[ Provider: 90, Workers hired: 370]
+
+<<< post process
+
+
+<<< done
+

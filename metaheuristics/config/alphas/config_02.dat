@@ -1,0 +1,12 @@
+# --- Common specific parameters ------------------------------------------------------------------------------
+inputDataFile        = data/exam.dat;          # Input DAT file
+solutionFile         = solutions/alpha_02.sol; # Output DAT file (solution)
+solver               = GRASP;                 # Supported solvers: Greedy / GRASP
+maxExecTime          = 300;                     # Maximum execution time in seconds
+
+# --- GRASP specific parameters -------------------------------------------------------------------------------
+alpha                = 0.2;                   # Alpha parameter for the GRASP solver.
+
+# --- Local Search specific parameters ------------------------------------------------------------------------
+#localSearch          = True;                  # Enable local search?
+localSearch          = False;                  # Enable local search?
