@@ -1,0 +1,218 @@
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_01.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000143          inf   0.00000000              0
+    0.00205708   34724.00000000   63.00000000              1
+    0.00462961   34158.00000000   63.00000000              3
+    0.00776052   30225.00000000   63.00000000              5
+    0.03343987   29089.00000000   65.00000000             24
+    0.06329632   28115.00000000   65.00000000             47
+    0.18558240   28080.00000000   65.00000000            143
+    0.43691683   25386.00000000   65.00000000            350
+    0.86734986   24613.00000000   65.00000000            708
+    3.35938120   23906.00000000   65.00000000           2735
+    6.00410557   23411.00000000   65.00000000           4895
+    8.26653433   23334.00000000   65.00000000           6723
+   11.95045662   22891.00000000   65.00000000           9780
+   20.82616901   22132.00000000   65.00000000          17047
+   22.52142048   22082.00000000   65.00000000          18441
+   75.93822622   21951.00000000   65.00000000          62589
+  120.00100374   21951.00000000   65.00000000          98918
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22399789
+  Total Eval. Time      109.774010181427 s
+  Avg. Time / Candidate 0.004900671617104385 ms
+solutions/alpha_01.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_02.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000143          inf   0.00000000              0
+    0.00146437   41560.00000000   62.00000000              1
+    0.00524616   33263.00000000   62.00000000              4
+    0.01424146   31380.00000000   63.00000000             11
+    0.02319813   30965.00000000   64.00000000             18
+    0.05138683   28541.00000000   64.00000000             43
+    0.06333447   26493.00000000   65.00000000             53
+    0.36338687   26273.00000000   65.00000000            325
+    0.48516917   25742.00000000   65.00000000            434
+    1.13024330   25453.00000000   65.00000000           1025
+    7.70713758   25284.00000000   65.00000000           7004
+    9.77984071   23514.00000000   65.00000000           8817
+   68.46475196   22964.00000000   65.00000000          61938
+  120.00027561   22964.00000000   65.00000000         108565
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22768702
+  Total Eval. Time      109.57945919036865 s
+  Avg. Time / Candidate 0.0048127231491004036 ms
+solutions/alpha_02.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_03.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000072          inf   0.00000000              0
+    0.00308824   43060.00000000   64.00000000              2
+    0.00443268   34670.00000000   64.00000000              3
+    0.01347685   33035.00000000   65.00000000             12
+    0.04249239   28582.00000000   65.00000000             38
+    0.09876060   28212.00000000   65.00000000             96
+    0.16195059   27510.00000000   65.00000000            158
+    0.47289181   24640.00000000   65.00000000            465
+   96.69908309   24430.00000000   65.00000000          96164
+  120.00060606   24430.00000000   65.00000000         119296
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22686905
+  Total Eval. Time      109.56220960617065 s
+  Avg. Time / Candidate 0.004829314955308829 ms
+solutions/alpha_03.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_04.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf   0.00000000              0
+    0.00165510   30389.00000000   65.00000000              1
+   11.99635315   29205.00000000   65.00000000          12908
+  120.00012159   29205.00000000   65.00000000         128879
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22416821
+  Total Eval. Time      109.90675163269043 s
+  Avg. Time / Candidate 0.004902869663485756 ms
+solutions/alpha_04.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_05.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf   0.00000000              0
+    0.00148678   34370.00000000   63.00000000              1
+  120.00019860   34370.00000000   63.00000000         143914
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 23166226
+  Total Eval. Time      109.6339979171753 s
+  Avg. Time / Candidate 0.00473249280729521 ms
+solutions/alpha_05.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_06.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf   0.00000000              0
+    0.00164413   36974.00000000   65.00000000              1
+    0.10387921   36790.00000000   65.00000000            130
+    0.66299772   36470.00000000   65.00000000            834
+  120.00010061   36470.00000000   65.00000000         151094
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22511319
+  Total Eval. Time      109.9571967124939 s
+  Avg. Time / Candidate 0.004884529276693822 ms
+solutions/alpha_06.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_07.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf   0.00000000              0
+    0.00278449   43060.00000000   64.00000000              3
+    0.01420784   40242.00000000   65.00000000             18
+  120.00002313   40242.00000000   65.00000000         163696
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 23386517
+  Total Eval. Time      109.87954306602478 s
+  Avg. Time / Candidate 0.004698414178820419 ms
+solutions/alpha_07.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_08.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf   0.00000000              0
+    0.01245213   43060.00000000   64.00000000             14
+  120.00003958   43060.00000000   64.00000000         164575
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 23205250
+  Total Eval. Time      110.2138831615448 s
+  Avg. Time / Candidate 0.00474952362769394 ms
+solutions/alpha_08.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_09.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf   0.00000000              0
+    0.00145054   30466.00000000   65.00000000              1
+  120.00024581   30466.00000000   65.00000000         166574
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 23486999
+  Total Eval. Time      110.47528386116028 s
+  Avg. Time / Candidate 0.004703678143859941 ms
+solutions/alpha_09.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config_1.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf   0.00000000              0
+    0.00211191   37457.00000000   64.00000000              1
+  120.00013447   37457.00000000   64.00000000         170725
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 24072424
+  Total Eval. Time      110.79321694374084 s
+  Avg. Time / Candidate 0.004602495242844711 ms
+solutions/alpha_1.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/config.dat...
+Reading Input Data file data/exam.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf   0.00000000              0
+    0.00302172   25280.00000000   60.00000000              2
+    0.04617715   21601.00000000   60.00000000             36
+    1.35808921   21506.00000000   61.00000000           1067
+    2.31341720   21458.00000000   61.00000000           1816
+    2.67586374   21453.00000000   62.00000000           2093
+    3.07345748   20490.00000000   62.00000000           2403
+   55.36198258   20410.00000000   62.00000000          43418
+  120.00009584   20410.00000000   62.00000000          94275
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 22540077
+  Total Eval. Time      109.63805413246155 s
+  Avg. Time / Candidate 0.004864138402564532 ms
+solutions/alpha_0.sol

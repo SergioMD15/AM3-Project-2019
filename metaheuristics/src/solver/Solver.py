@@ -9,6 +9,8 @@ class Solver(object):
                           'headerformat': '{:>14s}', 'valueformat': '{:>14.8f}'})
         logFields.append({'id': 'objValue',   'name': 'Obj. Value',
                           'headerformat': '{:>10s}', 'valueformat': '{:>10.8f}'})
+        logFields.append({'id': 'workers',   'name': 'Workers Hired',
+                          'headerformat': '{:>10s}', 'valueformat': '{:>10.8f}'})
         logFields.append({'id': 'iterations', 'name': 'Iterations',
                           'headerformat': '{:>12s}', 'valueformat': '{:>12d}'})
         self.logger = Logger(fields=logFields)
@@ -17,10 +19,11 @@ class Solver(object):
     def startTimeMeasure(self):
         self.startTime = time.time()
 
-    def writeLogLine(self, objValue, iterations):
+    def writeLogLine(self, objValue, workers, iterations):
         logValues = {}
         logValues['elapTime'] = time.time() - self.startTime
         logValues['objValue'] = objValue
+        logValues['workers'] = workers
         logValues['iterations'] = iterations
         self.logger.printValues(logValues)
 

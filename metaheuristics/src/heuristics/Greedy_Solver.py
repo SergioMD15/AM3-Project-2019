@@ -94,13 +94,14 @@ class Greedy_Solver(Solver):
     
     def solve(self, config, problem):
         self.startTimeMeasure()
-        self.writeLogLine(float('infinity'), 0)
+        self.writeLogLine(float('infinity'), 0, 0)
         solution, elapsedEvalTime, evaluatedCandidates = self.greedyConstruction(
             config, problem)
 
         solutionValue = solution.calculateCost()
+        workers = solution.get_workers()
 
-        self.writeLogLine(solutionValue, 1)
+        self.writeLogLine(solutionValue, workers, 1)
 
         print('Greedy solution: ', solutionValue)
 
@@ -108,10 +109,11 @@ class Greedy_Solver(Solver):
         solution = localSearch.run(solution)
 
         solutionValue = solution.calculateCost()
+        workers = solution.get_workers()
 
         print('Local search solution: ', solutionValue)
 
-        self.writeLogLine(solutionValue, 1)
+        self.writeLogLine(solutionValue, workers, 1)
 
         avg_evalTimePerCandidate = 0.0
         if (evaluatedCandidates != 0):

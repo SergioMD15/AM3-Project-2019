@@ -74,9 +74,10 @@ class GRASP_Solver(Solver):
     def solve(self, config, problem):
         bestSolution = Solution.createEmptySolution(config, problem)
         bestSolution.makeInfeasible()
+        bestWorkers = bestSolution.get_workers()
         bestCost = float('infinity')
         self.startTimeMeasure()
-        self.writeLogLine(bestCost, 0)
+        self.writeLogLine(bestCost, bestWorkers, 0)
 
         total_elapsedEvalTime = 0
         total_evaluatedCandidates = 0
@@ -86,7 +87,7 @@ class GRASP_Solver(Solver):
 
         iteration = 0
         
-        while(time.time() - self.startTime < config.maxExecTime or remaining_workers == 0):
+        while(time.time() - self.startTime < config.maxExecTime):
             iteration += 1
 
             # force first iteration as a Greedy execution (alpha == 0)
@@ -109,12 +110,14 @@ class GRASP_Solver(Solver):
             solution = localSearch.run(solution)
 
             solutionCost = solution.calculateCost()
-            if(problem.workers - workers <= remaining_workers and solutionCost < bestCost):
+            if(workers <= remaining_workers and workers >= 0 and solutionCost < bestCost):
                 bestSolution = solution
                 bestCost = solutionCost
-                self.writeLogLine(bestCost, iteration)
+                remaining_workers = workers
+                bestWorkers = bestSolution.get_workers()
+                self.writeLogLine(bestCost, bestWorkers, iteration)
 
-        self.writeLogLine(bestCost, iteration)
+        self.writeLogLine(bestCost, bestWorkers, iteration)
 
         avg_evalTimePerCandidate = 0.0
         if(total_evaluatedCandidates != 0):

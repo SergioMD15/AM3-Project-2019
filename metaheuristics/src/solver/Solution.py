@@ -34,6 +34,9 @@ class Solution():
             total_cost += hired.get_cost()
         return total_cost
 
+    def get_workers(self):
+        return sum([i.workers for i in self.hired])
+    
     def get_remaining_workers(self):
         return self.needed_workers - sum([i.workers for i in self.hired])
 
