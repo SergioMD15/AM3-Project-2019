@@ -71,7 +71,7 @@ subject to{
 
 	 // set z
 	 z == sum(p in P) (cost_contract[p]*some_hired[p] + cost_worker[p]*(hired_base[p] + hired_extra[p])
-	  + hired_1[p]*cost_1 + hired_2[p] * cost_2 + hired_3[p]*cost_3 + hired_extra[p]*cost_3);
+	  + hired_1[p]*cost_1 + hired_2[p] * cost_2 + hired_3[p]*cost_3);
 	  
 	// Constraint 1
 	// hire exactly the required number of workers wr
@@ -104,7 +104,7 @@ subject to{
 	
 	// Constraint 9
 	// the company cannot hire two providers from the same country
-	forall(p1 in P, p2 in P: p1 != p2) some_hired[p1] + all_hired[p2] + same_country[p1][p2] <= 2;
+	forall(p1 in P, p2 in P: p1 != p2) some_hired[p1] + some_hired[p2] + same_country[p1][p2] <= 2;
 	
 	
 	// extra negativity constraints
