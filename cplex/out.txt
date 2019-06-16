@@ -1,4 +1,177 @@
-data/instance_small_1.dat
+data/small/configuration_100.dat
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 1 time.
+MIP Presolve eliminated 10274 rows and 201 columns.
+MIP Presolve modified 578 coefficients.
+Reduced MIP has 528 rows, 701 columns, and 2196 nonzeros.
+Reduced MIP has 200 binaries, 501 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (7,56 ticks)
+Probing fixed 0 vars, tightened 7 bounds.
+Probing time = 0,00 sec. (5,30 ticks)
+Cover probing fixed 0 vars, tightened 1 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 171 rows and 114 columns.
+Reduced MIP has 357 rows, 587 columns, and 1740 nonzeros.
+Reduced MIP has 143 binaries, 444 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,99 ticks)
+Probing time = 0,00 sec. (1,44 ticks)
+Cover probing fixed 0 vars, tightened 2 bounds.
+Tried aggregator 1 time.
+Reduced MIP has 357 rows, 587 columns, and 1740 nonzeros.
+Reduced MIP has 143 binaries, 444 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,86 ticks)
+Probing time = 0,00 sec. (1,34 ticks)
+Clique table members: 202.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (3,60 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   1,59774e+08    10                 1,59774e+08      344         
+      0     0   1,59814e+08    35                     Cuts: 9      352         
+      0     0   1,59829e+08    21                    Cuts: 16      363         
+      0     0   1,59836e+08    55                     Cuts: 3      367         
+      0     0   1,59844e+08    52                     Cuts: 5      372         
+*     0+    0                       1,60076e+08   1,59844e+08      372    0,14%
+*     0+    0                       1,60023e+08   1,59844e+08      372    0,11%
+
+GUB cover cuts applied:  1
+Implied bound cuts applied:  20
+Mixed integer rounding cuts applied:  1
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0,09 sec. (69,12 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,09 sec. (69,12 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.60023e+8
+Needed workers: 13276
+Providers: 100
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 418]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 366]
+[ Provider: 11, Workers hired: 408]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 458]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 372]
+[ Provider: 18, Workers hired: 478]
+[ Provider: 19, Workers hired: 486]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 466]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 462]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 496]
+[ Provider: 33, Workers hired: 490]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 420]
+[ Provider: 39, Workers hired: 328]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 428]
+[ Provider: 45, Workers hired: 0]
+[ Provider: 46, Workers hired: 382]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 450]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 376]
+[ Provider: 55, Workers hired: 348]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 418]
+[ Provider: 60, Workers hired: 334]
+[ Provider: 61, Workers hired: 0]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 496]
+[ Provider: 66, Workers hired: 0]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 450]
+[ Provider: 72, Workers hired: 0]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 440]
+[ Provider: 78, Workers hired: 0]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 440]
+[ Provider: 81, Workers hired: 0]
+[ Provider: 82, Workers hired: 394]
+[ Provider: 83, Workers hired: 0]
+[ Provider: 84, Workers hired: 0]
+[ Provider: 85, Workers hired: 316]
+[ Provider: 86, Workers hired: 0]
+[ Provider: 87, Workers hired: 474]
+[ Provider: 88, Workers hired: 0]
+[ Provider: 89, Workers hired: 468]
+[ Provider: 90, Workers hired: 0]
+[ Provider: 91, Workers hired: 478]
+[ Provider: 92, Workers hired: 468]
+[ Provider: 93, Workers hired: 0]
+[ Provider: 94, Workers hired: 0]
+[ Provider: 95, Workers hired: 0]
+[ Provider: 96, Workers hired: 0]
+[ Provider: 97, Workers hired: 0]
+[ Provider: 98, Workers hired: 0]
+[ Provider: 99, Workers hired: 0]
+[ Provider: 100, Workers hired: 468]
+
+<<< post process
+
+
+<<< done
+
+data/small/configuration_10.dat
 
 <<< setup
 
@@ -6,79 +179,77 @@ data/instance_small_1.dat
 <<< generate
 
 Tried aggregator 2 times.
-MIP Presolve eliminated 120 rows and 14 columns.
-MIP Presolve modified 43 coefficients.
-Aggregator did 32 substitutions.
-Reduced MIP has 90 rows, 75 columns, and 237 nonzeros.
-Reduced MIP has 45 binaries, 30 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.51 ticks)
-Found incumbent of value 14160.000000 after 0.00 sec. (0.85 ticks)
-Probing fixed 0 vars, tightened 7 bounds.
-Probing time = 0.00 sec. (0.21 ticks)
-Tried aggregator 2 times.
-MIP Presolve modified 3 coefficients.
-Aggregator did 4 substitutions.
-Reduced MIP has 86 rows, 71 columns, and 229 nonzeros.
-Reduced MIP has 41 binaries, 30 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.23 ticks)
-Probing time = 0.00 sec. (0.19 ticks)
-Clique table members: 229.
+MIP Presolve eliminated 126 rows and 21 columns.
+MIP Presolve modified 54 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 55 rows, 70 columns, and 170 nonzeros.
+Reduced MIP has 20 binaries, 50 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,31 ticks)
+Found incumbent of value 33521,000000 after 0,00 sec. (0,55 ticks)
+Probing time = 0,00 sec. (0,05 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 9 rows and 6 columns.
+Reduced MIP has 46 rows, 64 columns, and 149 nonzeros.
+Reduced MIP has 17 binaries, 47 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,08 ticks)
+Probing time = 0,00 sec. (0,04 ticks)
+Clique table members: 21.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.16 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,18 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                        14160.0000        0.0000           100.00%
-*     0+    0                        13578.0000        0.0000           100.00%
-*     0+    0                        13256.0000        0.0000           100.00%
-      0     0     7846.0000     5    13256.0000     7846.0000       14   40.81%
-*     0     0      integral     0     8092.0000      Cuts: 11       33    0.00%
-      0     0        cutoff           8092.0000     8092.0000       33    0.00%
-Elapsed time = 0.01 sec. (2.41 ticks, tree = 0.01 MB, solutions = 4)
+*     0+    0                        33521,0000        0,0000       37  100,00%
+*     0+    0                        26156,0000        0,0000       37  100,00%
+      0     0    16291,9087    28    26156,0000    16291,9087       37   37,71%
+      0     0    23610,6964    31    26156,0000      Cuts: 45       59    9,73%
+*     0     0      integral     0    24328,0000      Cuts: 24       63    0,00%
+      0     0        cutoff          24328,0000    24328,0000       63    0,00%
+Elapsed time = 0,01 sec. (2,93 ticks, tree = 0,00 MB, solutions = 3)
 
-GUB cover cuts applied:  1
-Implied bound cuts applied:  1
-Flow cuts applied:  1
-Zero-half cuts applied:  1
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  1
+Implied bound cuts applied:  21
+Flow cuts applied:  8
+Mixed integer rounding cuts applied:  8
+Zero-half cuts applied:  2
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  12
 
 Root node processing (before b&c):
-  Real time             =    0.01 sec. (2.42 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,01 sec. (2,94 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.01 sec. (2.42 ticks)
+Total (root+branch&cut) =    0,01 sec. (2,94 ticks)
 
 <<< solve
 
 
-OBJECTIVE: 8092
-Needed workers: 75
+OBJECTIVE: 24328
+Needed workers: 81
 Providers: 10
 Hirings:
 [ Provider: 1, Workers hired: 0]
 [ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
+[ Provider: 3, Workers hired: 32]
 [ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
+[ Provider: 5, Workers hired: 12]
 [ Provider: 6, Workers hired: 0]
-[ Provider: 7, Workers hired: 46]
-[ Provider: 8, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 12]
 [ Provider: 9, Workers hired: 0]
-[ Provider: 10, Workers hired: 29]
+[ Provider: 10, Workers hired: 25]
 
 <<< post process
 
 
 <<< done
 
-data/instance_small_10.dat
+data/small/configuration_20.dat
 
 <<< setup
 
@@ -86,143 +257,67 @@ data/instance_small_10.dat
 <<< generate
 
 Tried aggregator 2 times.
-MIP Presolve eliminated 2520 rows and 101 columns.
-MIP Presolve modified 227 coefficients.
-Aggregator did 171 substitutions.
-Reduced MIP has 398 rows, 317 columns, and 1075 nonzeros.
-Reduced MIP has 170 binaries, 147 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (4.44 ticks)
-Probing time = 0.00 sec. (1.62 ticks)
+MIP Presolve eliminated 455 rows and 41 columns.
+MIP Presolve modified 114 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 106 rows, 140 columns, and 338 nonzeros.
+Reduced MIP has 40 binaries, 100 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,80 ticks)
+Found incumbent of value 113535,000000 after 0,00 sec. (1,02 ticks)
+Probing time = 0,00 sec. (0,13 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 398 rows, 317 columns, and 1075 nonzeros.
-Reduced MIP has 170 binaries, 147 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.88 ticks)
-Probing time = 0.00 sec. (1.57 ticks)
-Clique table members: 898.
+MIP Presolve eliminated 30 rows and 20 columns.
+Reduced MIP has 76 rows, 120 columns, and 268 nonzeros.
+Reduced MIP has 30 binaries, 90 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,16 ticks)
+Probing time = 0,00 sec. (0,08 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 76 rows, 120 columns, and 268 nonzeros.
+Reduced MIP has 30 binaries, 90 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,14 ticks)
+Probing time = 0,00 sec. (0,08 ticks)
+Clique table members: 50.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (1.94 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,35 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-      0     0    infeasible                                        221         
+*     0+    0                       113535,0000        0,0000       58  100,00%
+*     0+    0                        95885,0000        0,0000       58  100,00%
+      0     0    50825,3844    36    95885,0000    50825,3844       58   46,99%
+      0     0    82878,0000     3    95885,0000     Cuts: 109       98   13,57%
+*     0     0      integral     0    82878,0000       Cuts: 2       99    0,00%
+      0     0        cutoff          82878,0000    82878,0000       99    0,00%
+Elapsed time = 0,02 sec. (4,23 ticks, tree = 0,00 MB, solutions = 3)
+
+Implied bound cuts applied:  54
+Flow cuts applied:  16
+Mixed integer rounding cuts applied:  6
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  18
 
 Root node processing (before b&c):
-  Real time             =    0.03 sec. (15.12 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,02 sec. (4,23 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.03 sec. (15.12 ticks)
+Total (root+branch&cut) =    0,02 sec. (4,23 ticks)
 
 <<< solve
 
 
-<<< no solution
-
-data/instance_small_2.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 3 times.
-MIP Presolve eliminated 445 rows and 41 columns.
-MIP Presolve modified 90 coefficients.
-Aggregator did 70 substitutions.
-Reduced MIP has 167 rows, 130 columns, and 433 nonzeros.
-Reduced MIP has 73 binaries, 57 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (1.30 ticks)
-Found incumbent of value 14020.000000 after 0.00 sec. (1.58 ticks)
-Probing fixed 0 vars, tightened 16 bounds.
-Probing time = 0.00 sec. (0.57 ticks)
-Tried aggregator 1 time.
-MIP Presolve modified 6 coefficients.
-Reduced MIP has 167 rows, 130 columns, and 433 nonzeros.
-Reduced MIP has 73 binaries, 57 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.34 ticks)
-Probing time = 0.00 sec. (0.56 ticks)
-Clique table members: 380.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.35 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                        14020.0000     -675.0000           104.81%
-*     0+    0                        13633.0000     -675.0000           104.95%
-*     0+    0                        13504.0000     -675.0000           105.00%
-      0     0     7550.0244     4    13504.0000     7550.0244       34   44.09%
-*     0+    0                         8767.0000     7550.0244            13.88%
-      0     0     7742.6634    15     8767.0000      Cuts: 18       54   11.68%
-      0     0     7881.0815    12     8767.0000      Cuts: 19       58   10.11%
-*     0+    0                         8718.0000     7881.0815             9.60%
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 83 rows and 59 columns.
-MIP Presolve modified 16 coefficients.
-Aggregator did 2 substitutions.
-Reduced MIP has 82 rows, 69 columns, and 214 nonzeros.
-Reduced MIP has 38 binaries, 31 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.31 ticks)
-Probing time = 0.00 sec. (0.22 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 82 rows, 69 columns, and 214 nonzeros.
-Reduced MIP has 38 binaries, 31 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.16 ticks)
-Represolve time = 0.00 sec. (1.03 ticks)
-Probing time = 0.00 sec. (0.22 ticks)
-Clique table members: 216.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.37 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                         8718.0000     7881.0815             9.60%
-      0     0     7881.0815    12     8718.0000     7881.0815      102    9.60%
-      0     0     7912.0103    23     8718.0000      Cuts: 11      111    9.25%
-      0     0     8139.6836    17     8718.0000       Cuts: 7      118    6.63%
-      0     0     8433.5049    15     8718.0000       Cuts: 5      130    3.26%
-*     0     0      integral     0     8434.0000       Cuts: 7      133    0.00%
-      0     0        cutoff           8434.0000     8434.0000      133    0.00%
-Elapsed time = 0.03 sec. (11.66 ticks, tree = 0.01 MB, solutions = 6)
-
-GUB cover cuts applied:  2
-Clique cuts applied:  1
-Implied bound cuts applied:  5
-Mixed integer rounding cuts applied:  3
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  4
-
-Root node processing (before b&c):
-  Real time             =    0.03 sec. (11.68 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.03 sec. (11.68 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 8434
-Needed workers: 69
+OBJECTIVE: 82878
+Needed workers: 206
 Providers: 20
 Hirings:
-[ Provider: 1, Workers hired: 31]
-[ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 20]
+[ Provider: 3, Workers hired: 12]
 [ Provider: 4, Workers hired: 0]
 [ Provider: 5, Workers hired: 0]
 [ Provider: 6, Workers hired: 0]
@@ -232,422 +327,311 @@ Hirings:
 [ Provider: 10, Workers hired: 0]
 [ Provider: 11, Workers hired: 0]
 [ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 31]
+[ Provider: 14, Workers hired: 65]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 38]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 40]
+[ Provider: 20, Workers hired: 0]
+
+<<< post process
+
+
+<<< done
+
+data/small/configuration_30.dat
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 2 times.
+MIP Presolve eliminated 983 rows and 61 columns.
+MIP Presolve modified 175 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 158 rows, 210 columns, and 506 nonzeros.
+Reduced MIP has 60 binaries, 150 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,41 ticks)
+Probing time = 0,00 sec. (0,19 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 57 rows and 38 columns.
+Reduced MIP has 101 rows, 172 columns, and 373 nonzeros.
+Reduced MIP has 41 binaries, 131 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,24 ticks)
+Probing time = 0,00 sec. (0,10 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 101 rows, 172 columns, and 373 nonzeros.
+Reduced MIP has 41 binaries, 131 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,20 ticks)
+Probing time = 0,00 sec. (0,10 ticks)
+Clique table members: 61.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (0,64 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   408716,9292    21                 408716,9292       97         
+      0     0   415306,3393    18                    Cuts: 35      109         
+      0     0   417028,4118    23                    Cuts: 17      116         
+*     0     0      integral     0   417951,0000       Cuts: 8      123    0,00%
+      0     0        cutoff         417951,0000   417951,0000      123    0,00%
+Elapsed time = 0,02 sec. (8,24 ticks, tree = 0,00 MB, solutions = 1)
+
+Implied bound cuts applied:  28
+Flow cuts applied:  6
+Mixed integer rounding cuts applied:  6
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  6
+
+Root node processing (before b&c):
+  Real time             =    0,02 sec. (8,25 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,02 sec. (8,25 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 417951
+Needed workers: 511
+Providers: 30
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 51]
+[ Provider: 3, Workers hired: 0]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 52]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 50]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 44]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 38]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 26]
+[ Provider: 17, Workers hired: 60]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 58]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 52]
+[ Provider: 26, Workers hired: 22]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 58]
+[ Provider: 30, Workers hired: 0]
+
+<<< post process
+
+
+<<< done
+
+data/small/configuration_40.dat
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 2 times.
+MIP Presolve eliminated 1709 rows and 81 columns.
+MIP Presolve modified 226 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 212 rows, 280 columns, and 680 nonzeros.
+Reduced MIP has 80 binaries, 200 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,11 ticks)
+Probing time = 0,00 sec. (0,29 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 51 rows and 34 columns.
+Reduced MIP has 161 rows, 246 columns, and 561 nonzeros.
+Reduced MIP has 63 binaries, 183 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,34 ticks)
+Probing time = 0,00 sec. (0,19 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 161 rows, 246 columns, and 561 nonzeros.
+Reduced MIP has 63 binaries, 183 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,30 ticks)
+Probing time = 0,00 sec. (0,19 ticks)
+Clique table members: 137.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,07 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   771769,3763    36                 771769,3763      157         
+      0     0   786413,4000     8                    Cuts: 60      173         
+      0     0   787812,0000    24                     Cuts: 4      184         
+      0     0   788071,3333    34                     Cuts: 2      187         
+      0     0   788724,3750    46                     Cuts: 3      191         
+      0     0   788814,9057    50                  MIRcuts: 2      194         
+      0     0   788827,3913    59                  MIRcuts: 2      195         
+*     0+    0                       790143,0000   788827,3913      195    0,17%
+*     0     0      integral     0   790143,0000   790143,0000      195    0,00%
+Elapsed time = 0,03 sec. (17,75 ticks, tree = 0,00 MB, solutions = 1)
+
+GUB cover cuts applied:  1
+Implied bound cuts applied:  28
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  4
+Zero-half cuts applied:  1
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    0,03 sec. (17,76 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,03 sec. (17,76 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 790143
+Needed workers: 736
+Providers: 40
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 0]
+[ Provider: 3, Workers hired: 76]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 40]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 74]
 [ Provider: 13, Workers hired: 0]
 [ Provider: 14, Workers hired: 0]
 [ Provider: 15, Workers hired: 0]
 [ Provider: 16, Workers hired: 0]
 [ Provider: 17, Workers hired: 0]
 [ Provider: 18, Workers hired: 0]
-[ Provider: 19, Workers hired: 38]
-[ Provider: 20, Workers hired: 0]
-
-<<< post process
-
-
-<<< done
-
-data/instance_small_3.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 3 times.
-MIP Presolve eliminated 293 rows and 30 columns.
-MIP Presolve modified 69 coefficients.
-Aggregator did 55 substitutions.
-Reduced MIP has 134 rows, 108 columns, and 349 nonzeros.
-Reduced MIP has 62 binaries, 46 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.95 ticks)
-Found incumbent of value 25323.000000 after 0.00 sec. (1.17 ticks)
-Probing time = 0.00 sec. (0.10 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 134 rows, 108 columns, and 349 nonzeros.
-Reduced MIP has 62 binaries, 46 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Probing time = 0.00 sec. (0.10 ticks)
-Clique table members: 135.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.25 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                        25323.0000    -1916.0000           107.57%
-*     0+    0                        24905.0000    -1916.0000           107.69%
-      0     0    12976.4909     4    24905.0000    12976.4909       22   47.90%
-      0     0    13130.1536     9    24905.0000       Cuts: 7       47   47.28%
-*     0+    0                        13946.0000    13130.1536             5.85%
-      0     0    13340.5924    20    13946.0000      Cuts: 18       57    4.34%
-*     0+    0                        13941.0000    13340.5924             4.31%
-*     0+    0                        13889.0000    13340.5924             3.95%
-
-Repeating presolve.
-Tried aggregator 2 times.
-MIP Presolve eliminated 76 rows and 64 columns.
-MIP Presolve modified 6 coefficients.
-Aggregator did 2 substitutions.
-Reduced MIP has 56 rows, 42 columns, and 138 nonzeros.
-Reduced MIP has 22 binaries, 20 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.16 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-Reduced MIP has 56 rows, 42 columns, and 138 nonzeros.
-Reduced MIP has 22 binaries, 20 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.09 ticks)
-Represolve time = 0.00 sec. (0.50 ticks)
-Probing time = 0.00 sec. (0.04 ticks)
-Clique table members: 51.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.22 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                        13889.0000    13340.5924             3.95%
-      0     0    13340.5924    19    13889.0000    13340.5924       85    3.95%
-      0     0    13405.6393    23    13889.0000       Cuts: 8       94    3.48%
-      0     0    13412.0676    25    13889.0000       Cuts: 4       97    3.43%
-      0     0    13414.2589    25    13889.0000       Cuts: 3      100    3.42%
-      0     0    13419.7986    23    13889.0000       Cuts: 8      104    3.38%
-      0     0    13421.1754    25    13889.0000       Cuts: 9      109    3.37%
-      0     0    13423.8491    27    13889.0000       Cuts: 5      113    3.35%
-      0     0    13428.7105    27    13889.0000       Cuts: 3      118    3.31%
-      0     0    13448.0926    24    13889.0000       Cuts: 3      128    3.17%
-      0     0    13451.5246    25    13889.0000   ZeroHalf: 1      130    3.15%
-      0     0    13485.0231    21    13889.0000       Cuts: 4      137    2.91%
-      0     0    13499.8077    25    13889.0000       Cuts: 3      141    2.80%
-      0     0    13507.1448    25    13889.0000       Cuts: 5      144    2.75%
-      0     0    13513.7700    24    13889.0000       Cuts: 4      147    2.70%
-      0     0    13514.7483    25    13889.0000       Cuts: 2      150    2.69%
-      0     0    13521.5664    26    13889.0000   ZeroHalf: 2      154    2.65%
-      0     0        cutoff          13889.0000    13889.0000      154    0.00%
-Elapsed time = 0.03 sec. (12.01 ticks, tree = 0.01 MB, solutions = 5)
-
-Clique cuts applied:  2
-Implied bound cuts applied:  6
-Zero-half cuts applied:  5
-
-Root node processing (before b&c):
-  Real time             =    0.03 sec. (12.03 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.03 sec. (12.03 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 13889
-Needed workers: 124
-Providers: 16
-Hirings:
-[ Provider: 1, Workers hired: 0]
-[ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
-[ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 60]
-[ Provider: 7, Workers hired: 64]
-[ Provider: 8, Workers hired: 0]
-[ Provider: 9, Workers hired: 0]
-[ Provider: 10, Workers hired: 0]
-[ Provider: 11, Workers hired: 0]
-[ Provider: 12, Workers hired: 0]
-[ Provider: 13, Workers hired: 0]
-[ Provider: 14, Workers hired: 0]
-[ Provider: 15, Workers hired: 0]
-[ Provider: 16, Workers hired: 0]
-
-<<< post process
-
-
-<<< done
-
-data/instance_small_4.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 3 times.
-MIP Presolve eliminated 1032 rows and 63 columns.
-MIP Presolve modified 145 coefficients.
-Aggregator did 103 substitutions.
-Reduced MIP has 262 rows, 207 columns, and 683 nonzeros.
-Reduced MIP has 114 binaries, 93 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (2.28 ticks)
-Found incumbent of value 21970.000000 after 0.01 sec. (3.45 ticks)
-Probing time = 0.00 sec. (0.30 ticks)
-Tried aggregator 2 times.
-Aggregator did 3 substitutions.
-Reduced MIP has 259 rows, 204 columns, and 677 nonzeros.
-Reduced MIP has 111 binaries, 93 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.80 ticks)
-Probing time = 0.00 sec. (0.27 ticks)
-Clique table members: 395.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.46 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                        21970.0000    -4016.0000           118.28%
-*     0+    0                        21394.0000    -4016.0000           118.77%
-      0     0    12808.2075     4    21394.0000    12808.2075       24   40.13%
-      0     0    12879.6693     4    21394.0000       Cuts: 6       37   39.80%
-      0     0    12968.5000     8    21394.0000       Cuts: 4       48   39.38%
-*     0+    0                        13200.0000    12968.5000             1.75%
-      0     0        cutoff          13200.0000    13200.0000       48    0.00%
-Elapsed time = 0.02 sec. (8.73 ticks, tree = 0.01 MB, solutions = 3)
-
-Flow cuts applied:  1
-Mixed integer rounding cuts applied:  1
-Lift and project cuts applied:  1
-
-Root node processing (before b&c):
-  Real time             =    0.02 sec. (8.75 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.02 sec. (8.75 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 13200
-Needed workers: 132
-Providers: 31
-Hirings:
-[ Provider: 1, Workers hired: 0]
-[ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
-[ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 48]
-[ Provider: 6, Workers hired: 0]
-[ Provider: 7, Workers hired: 0]
-[ Provider: 8, Workers hired: 0]
-[ Provider: 9, Workers hired: 41]
-[ Provider: 10, Workers hired: 0]
-[ Provider: 11, Workers hired: 0]
-[ Provider: 12, Workers hired: 0]
-[ Provider: 13, Workers hired: 0]
-[ Provider: 14, Workers hired: 0]
-[ Provider: 15, Workers hired: 0]
-[ Provider: 16, Workers hired: 0]
-[ Provider: 17, Workers hired: 0]
-[ Provider: 18, Workers hired: 43]
 [ Provider: 19, Workers hired: 0]
 [ Provider: 20, Workers hired: 0]
-[ Provider: 21, Workers hired: 0]
+[ Provider: 21, Workers hired: 76]
 [ Provider: 22, Workers hired: 0]
-[ Provider: 23, Workers hired: 0]
+[ Provider: 23, Workers hired: 78]
 [ Provider: 24, Workers hired: 0]
 [ Provider: 25, Workers hired: 0]
 [ Provider: 26, Workers hired: 0]
 [ Provider: 27, Workers hired: 0]
 [ Provider: 28, Workers hired: 0]
 [ Provider: 29, Workers hired: 0]
-[ Provider: 30, Workers hired: 0]
-[ Provider: 31, Workers hired: 0]
-
-<<< post process
-
-
-<<< done
-
-data/instance_small_5.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 2 times.
-MIP Presolve eliminated 1311 rows and 85 columns.
-MIP Presolve modified 171 coefficients.
-Aggregator did 110 substitutions.
-Reduced MIP has 296 rows, 226 columns, and 760 nonzeros.
-Reduced MIP has 121 binaries, 105 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (2.44 ticks)
-Found incumbent of value 35304.000000 after 0.00 sec. (2.92 ticks)
-Probing time = 0.00 sec. (0.33 ticks)
-Tried aggregator 2 times.
-Aggregator did 2 substitutions.
-Reduced MIP has 294 rows, 224 columns, and 756 nonzeros.
-Reduced MIP has 119 binaries, 105 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.90 ticks)
-Probing time = 0.00 sec. (0.32 ticks)
-Clique table members: 447.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.58 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                        35304.0000    -1530.0000           104.33%
-*     0+    0                        35016.0000    -1530.0000           104.37%
-      0     0    22772.8214     5    35016.0000    22772.8214       43   34.96%
-      0     0    22803.0000    10    35016.0000       Cuts: 7       67   34.88%
-*     0+    0                        22964.0000    22803.0000             0.70%
-      0     0    22831.0000    16    22964.0000       Cuts: 7       81    0.58%
-*     0+    0                        22848.0000    22831.0000             0.07%
-      0     0        cutoff          22848.0000    22848.0000       81    0.00%
-Elapsed time = 0.02 sec. (9.45 ticks, tree = 0.01 MB, solutions = 4)
-
-Implied bound cuts applied:  4
-Mixed integer rounding cuts applied:  1
-Gomory fractional cuts applied:  1
-
-Root node processing (before b&c):
-  Real time             =    0.02 sec. (9.47 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.02 sec. (9.47 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 22848
-Needed workers: 176
-Providers: 35
-Hirings:
-[ Provider: 1, Workers hired: 0]
-[ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
-[ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 0]
-[ Provider: 7, Workers hired: 0]
-[ Provider: 8, Workers hired: 0]
-[ Provider: 9, Workers hired: 0]
-[ Provider: 10, Workers hired: 0]
-[ Provider: 11, Workers hired: 0]
-[ Provider: 12, Workers hired: 0]
-[ Provider: 13, Workers hired: 0]
-[ Provider: 14, Workers hired: 0]
-[ Provider: 15, Workers hired: 0]
-[ Provider: 16, Workers hired: 0]
-[ Provider: 17, Workers hired: 0]
-[ Provider: 18, Workers hired: 0]
-[ Provider: 19, Workers hired: 65]
-[ Provider: 20, Workers hired: 0]
-[ Provider: 21, Workers hired: 0]
-[ Provider: 22, Workers hired: 0]
-[ Provider: 23, Workers hired: 0]
-[ Provider: 24, Workers hired: 50]
-[ Provider: 25, Workers hired: 0]
-[ Provider: 26, Workers hired: 0]
-[ Provider: 27, Workers hired: 0]
-[ Provider: 28, Workers hired: 0]
-[ Provider: 29, Workers hired: 0]
-[ Provider: 30, Workers hired: 0]
+[ Provider: 30, Workers hired: 80]
 [ Provider: 31, Workers hired: 0]
 [ Provider: 32, Workers hired: 0]
-[ Provider: 33, Workers hired: 61]
+[ Provider: 33, Workers hired: 0]
 [ Provider: 34, Workers hired: 0]
-[ Provider: 35, Workers hired: 0]
+[ Provider: 35, Workers hired: 40]
+[ Provider: 36, Workers hired: 66]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 68]
+[ Provider: 39, Workers hired: 62]
+[ Provider: 40, Workers hired: 76]
 
 <<< post process
 
 
 <<< done
 
-data/instance_small_6.dat
+data/small/configuration_50.dat
 
 <<< setup
 
 
 <<< generate
 
-Tried aggregator 3 times.
-MIP Presolve eliminated 1533 rows and 86 columns.
-MIP Presolve modified 184 coefficients.
-Aggregator did 125 substitutions.
-Reduced MIP has 320 rows, 246 columns, and 829 nonzeros.
-Reduced MIP has 132 binaries, 114 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (3.01 ticks)
-Found incumbent of value 64072.000000 after 0.01 sec. (4.40 ticks)
-Probing time = 0.00 sec. (0.37 ticks)
 Tried aggregator 2 times.
-MIP Presolve eliminated 0 rows and 1 columns.
-Aggregator did 3 substitutions.
-Reduced MIP has 317 rows, 242 columns, and 821 nonzeros.
-Reduced MIP has 128 binaries, 114 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.97 ticks)
-Probing time = 0.00 sec. (0.35 ticks)
-Clique table members: 493.
+MIP Presolve eliminated 2640 rows and 101 columns.
+MIP Presolve modified 288 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 261 rows, 350 columns, and 849 nonzeros.
+Reduced MIP has 100 binaries, 250 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (2,83 ticks)
+Probing time = 0,00 sec. (0,44 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 84 rows and 56 columns.
+Reduced MIP has 177 rows, 294 columns, and 653 nonzeros.
+Reduced MIP has 72 binaries, 222 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,43 ticks)
+Probing time = 0,00 sec. (0,23 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 177 rows, 294 columns, and 653 nonzeros.
+Reduced MIP has 72 binaries, 222 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,36 ticks)
+Probing time = 0,00 sec. (0,23 ticks)
+Clique table members: 138.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.76 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,34 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                        64072.0000    -5854.0000           109.14%
-*     0+    0                        58908.0000    -5854.0000           109.94%
-*     0+    0                        56535.0000    -5854.0000           110.35%
-      0     0    38848.1429     4    56535.0000    38848.1429       70   31.28%
-      0     0    38849.7925    14    56535.0000       Cuts: 7      105   31.28%
-      0     0    38855.8500    13    56535.0000       Cuts: 8      121   31.27%
-      0     0    38856.9771    19    56535.0000       Cuts: 4      127   31.27%
-      0     0    38858.4800    19    56535.0000   Flowcuts: 1      128   31.27%
-*     0+    0                        40337.0000    38858.4800             3.67%
-*     0+    0                        39507.0000    38858.4800             1.64%
-*     0+    0                        38963.0000    38858.4800             0.27%
-      0     0        cutoff          38963.0000    38963.0000      128    0.00%
-Elapsed time = 0.03 sec. (17.81 ticks, tree = 0.01 MB, solutions = 6)
+      0     0  1693729,5046    65                1693729,5046      180         
+      0     0  1719264,4660    19                   Cuts: 122      212         
+      0     0  1719380,6981    43                     Cuts: 4      215         
+      0     0  1719443,5926    37                  MIRcuts: 2      217         
+*     0+    0                      1723844,0000  1719443,5926      217    0,26%
+*     0+    0                      1723436,0000  1719443,5926      217    0,23%
 
-Implied bound cuts applied:  5
-Flow cuts applied:  1
-Lift and project cuts applied:  2
-Gomory fractional cuts applied:  1
+Implied bound cuts applied:  62
+Flow cuts applied:  16
+Mixed integer rounding cuts applied:  4
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  24
 
 Root node processing (before b&c):
-  Real time             =    0.03 sec. (17.84 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,05 sec. (26,50 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.03 sec. (17.84 ticks)
+Total (root+branch&cut) =    0,05 sec. (26,50 ticks)
 
 <<< solve
 
 
-OBJECTIVE: 38963
-Needed workers: 250
-Providers: 38
+OBJECTIVE: 1723436
+Needed workers: 1147
+Providers: 50
 Hirings:
 [ Provider: 1, Workers hired: 0]
-[ Provider: 2, Workers hired: 37]
+[ Provider: 2, Workers hired: 100]
 [ Provider: 3, Workers hired: 0]
 [ Provider: 4, Workers hired: 0]
 [ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 38]
-[ Provider: 7, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 107]
 [ Provider: 8, Workers hired: 0]
 [ Provider: 9, Workers hired: 0]
 [ Provider: 10, Workers hired: 0]
-[ Provider: 11, Workers hired: 30]
+[ Provider: 11, Workers hired: 0]
 [ Provider: 12, Workers hired: 0]
 [ Provider: 13, Workers hired: 0]
 [ Provider: 14, Workers hired: 0]
@@ -656,138 +640,325 @@ Hirings:
 [ Provider: 17, Workers hired: 0]
 [ Provider: 18, Workers hired: 0]
 [ Provider: 19, Workers hired: 0]
-[ Provider: 20, Workers hired: 40]
+[ Provider: 20, Workers hired: 0]
 [ Provider: 21, Workers hired: 0]
 [ Provider: 22, Workers hired: 0]
-[ Provider: 23, Workers hired: 0]
+[ Provider: 23, Workers hired: 92]
 [ Provider: 24, Workers hired: 0]
-[ Provider: 25, Workers hired: 36]
+[ Provider: 25, Workers hired: 0]
 [ Provider: 26, Workers hired: 0]
 [ Provider: 27, Workers hired: 0]
 [ Provider: 28, Workers hired: 0]
 [ Provider: 29, Workers hired: 0]
-[ Provider: 30, Workers hired: 29]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 110]
+[ Provider: 32, Workers hired: 104]
+[ Provider: 33, Workers hired: 0]
+[ Provider: 34, Workers hired: 120]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 118]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 112]
+[ Provider: 40, Workers hired: 112]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 70]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 102]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+
+<<< post process
+
+
+<<< done
+
+data/small/configuration_60.dat
+
+<<< setup
+
+
+<<< generate
+
+Tried aggregator 2 times.
+MIP Presolve eliminated 3769 rows and 121 columns.
+MIP Presolve modified 339 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 312 rows, 420 columns, and 1020 nonzeros.
+Reduced MIP has 120 binaries, 300 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (3,70 ticks)
+Probing time = 0,00 sec. (0,58 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 84 rows and 56 columns.
+Reduced MIP has 228 rows, 364 columns, and 824 nonzeros.
+Reduced MIP has 92 binaries, 272 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,53 ticks)
+Probing time = 0,00 sec. (0,35 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 228 rows, 364 columns, and 824 nonzeros.
+Reduced MIP has 92 binaries, 272 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,45 ticks)
+Probing time = 0,00 sec. (0,35 ticks)
+Clique table members: 240.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,49 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  1799135,7149    30                1799135,7149      180         
+      0     0  1808953,4615    12                    Cuts: 49      194         
+      0     0  1809887,2500    21                     Cuts: 4      197         
+      0     0  1810463,2449    45                     Cuts: 2      205         
+      0     0  1811397,6676    45                    Cuts: 13      212         
+      0     0  1811641,3977    38                    Cuts: 13      219         
+      0     0  1811895,3188    55                     Cuts: 5      225         
+      0     0  1813505,4007    41                    Cuts: 13      235         
+      0     0  1813514,3860    53                 ZeroHalf: 1      236         
+      0     0  1813648,1311    53                  MIRcuts: 1      237         
+*     0+    0                      1839250,0000  1813648,1311      237    1,39%
+*     0+    0                      1815243,0000  1813648,1311      237    0,09%
+
+Implied bound cuts applied:  39
+Flow cuts applied:  11
+Mixed integer rounding cuts applied:  2
+Zero-half cuts applied:  2
+Gomory fractional cuts applied:  7
+
+Root node processing (before b&c):
+  Real time             =    0,05 sec. (31,65 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,05 sec. (31,65 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1815243
+Needed workers: 1183
+Providers: 60
+Hirings:
+[ Provider: 1, Workers hired: 0]
+[ Provider: 2, Workers hired: 88]
+[ Provider: 3, Workers hired: 116]
+[ Provider: 4, Workers hired: 0]
+[ Provider: 5, Workers hired: 0]
+[ Provider: 6, Workers hired: 0]
+[ Provider: 7, Workers hired: 0]
+[ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 118]
+[ Provider: 10, Workers hired: 0]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 114]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 0]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 0]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 0]
 [ Provider: 31, Workers hired: 0]
-[ Provider: 32, Workers hired: 40]
+[ Provider: 32, Workers hired: 114]
 [ Provider: 33, Workers hired: 0]
 [ Provider: 34, Workers hired: 0]
 [ Provider: 35, Workers hired: 0]
 [ Provider: 36, Workers hired: 0]
 [ Provider: 37, Workers hired: 0]
-[ Provider: 38, Workers hired: 0]
+[ Provider: 38, Workers hired: 120]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 72]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 120]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 0]
+[ Provider: 46, Workers hired: 100]
+[ Provider: 47, Workers hired: 117]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 0]
+[ Provider: 55, Workers hired: 104]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 0]
 
 <<< post process
 
 
 <<< done
 
-data/instance_small_7.dat
+data/small/configuration_70.dat
 
 <<< setup
 
 
 <<< generate
 
-Tried aggregator 3 times.
-MIP Presolve eliminated 1602 rows and 73 columns.
-MIP Presolve modified 179 coefficients.
-Aggregator did 135 substitutions.
-Reduced MIP has 332 rows, 261 columns, and 869 nonzeros.
-Reduced MIP has 144 binaries, 117 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (3.20 ticks)
-Found incumbent of value 620387.000000 after 0.01 sec. (4.67 ticks)
-Probing time = 0.00 sec. (0.36 ticks)
 Tried aggregator 2 times.
-Aggregator did 2 substitutions.
-Reduced MIP has 330 rows, 259 columns, and 865 nonzeros.
-Reduced MIP has 142 binaries, 117 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (1.04 ticks)
-Probing time = 0.00 sec. (0.35 ticks)
-Clique table members: 496.
+MIP Presolve eliminated 5092 rows and 141 columns.
+MIP Presolve modified 399 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 369 rows, 490 columns, and 1188 nonzeros.
+Reduced MIP has 140 binaries, 350 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (4,70 ticks)
+Found incumbent of value 1,5549933e+07 after 0,01 sec. (6,95 ticks)
+Probing time = 0,00 sec. (0,50 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 102 rows and 68 columns.
+Reduced MIP has 267 rows, 422 columns, and 950 nonzeros.
+Reduced MIP has 106 binaries, 316 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,62 ticks)
+Probing time = 0,00 sec. (0,30 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 267 rows, 422 columns, and 950 nonzeros.
+Reduced MIP has 106 binaries, 316 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,53 ticks)
+Probing time = 0,00 sec. (0,30 ticks)
+Clique table members: 195.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (1.11 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,44 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                       620387.0000   -23333.0000           103.76%
-*     0+    0                       615662.0000   -23333.0000           103.79%
-      0     0   520115.8710     4   615662.0000   520115.8710      121   15.52%
-      0     0   520155.5000     6   615662.0000       Cuts: 6      134   15.51%
-*     0     0      integral     0   520266.0000       Cuts: 4      139    0.00%
-      0     0        cutoff         520266.0000   520266.0000      139    0.00%
-Elapsed time = 0.02 sec. (11.12 ticks, tree = 0.01 MB, solutions = 3)
+*     0+    0                       1,55499e+07        0,0000      181  100,00%
+*     0+    0                       1,55493e+07        0,0000      181  100,00%
+      0     0   1,29660e+07     1   1,55493e+07   1,29660e+07      181   16,61%
+      0     0   1,29841e+07    17   1,55493e+07       Cuts: 6      220   16,50%
+      0     0   1,29847e+07    32   1,55493e+07      Cuts: 17      233   16,49%
+      0     0   1,29912e+07    26   1,55493e+07      Cuts: 10      245   16,45%
+      0     0   1,29914e+07    38   1,55493e+07      Cuts: 14      254   16,45%
+*     0     0      integral     0   1,29916e+07    MIRcuts: 2      255    0,00%
+      0     0        cutoff         1,29916e+07   1,29916e+07      255    0,00%
+Elapsed time = 0,03 sec. (19,15 ticks, tree = 0,00 MB, solutions = 3)
 
-Implied bound cuts applied:  2
-Mixed integer rounding cuts applied:  1
+Implied bound cuts applied:  21
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  5
 Zero-half cuts applied:  1
-Lift and project cuts applied:  1
 Gomory fractional cuts applied:  2
 
 Root node processing (before b&c):
-  Real time             =    0.02 sec. (11.15 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,03 sec. (19,18 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.02 sec. (11.15 ticks)
+Total (root+branch&cut) =    0,03 sec. (19,18 ticks)
 
 <<< solve
 
 
-OBJECTIVE: 520266
-Needed workers: 729
-Providers: 39
+OBJECTIVE: 1.299155e+7
+Needed workers: 3546
+Providers: 70
 Hirings:
-[ Provider: 1, Workers hired: 32]
-[ Provider: 2, Workers hired: 54]
-[ Provider: 3, Workers hired: 0]
+[ Provider: 1, Workers hired: 184]
+[ Provider: 2, Workers hired: 196]
+[ Provider: 3, Workers hired: 194]
 [ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 56]
+[ Provider: 5, Workers hired: 182]
+[ Provider: 6, Workers hired: 0]
 [ Provider: 7, Workers hired: 0]
-[ Provider: 8, Workers hired: 0]
-[ Provider: 9, Workers hired: 42]
-[ Provider: 10, Workers hired: 0]
-[ Provider: 11, Workers hired: 0]
-[ Provider: 12, Workers hired: 0]
+[ Provider: 8, Workers hired: 184]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 87]
+[ Provider: 11, Workers hired: 186]
+[ Provider: 12, Workers hired: 176]
 [ Provider: 13, Workers hired: 0]
-[ Provider: 14, Workers hired: 42]
-[ Provider: 15, Workers hired: 42]
-[ Provider: 16, Workers hired: 40]
+[ Provider: 14, Workers hired: 182]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 0]
 [ Provider: 17, Workers hired: 0]
-[ Provider: 18, Workers hired: 58]
+[ Provider: 18, Workers hired: 0]
 [ Provider: 19, Workers hired: 0]
-[ Provider: 20, Workers hired: 0]
+[ Provider: 20, Workers hired: 192]
 [ Provider: 21, Workers hired: 0]
-[ Provider: 22, Workers hired: 34]
-[ Provider: 23, Workers hired: 48]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
 [ Provider: 24, Workers hired: 0]
 [ Provider: 25, Workers hired: 0]
-[ Provider: 26, Workers hired: 44]
+[ Provider: 26, Workers hired: 0]
 [ Provider: 27, Workers hired: 0]
-[ Provider: 28, Workers hired: 0]
-[ Provider: 29, Workers hired: 0]
+[ Provider: 28, Workers hired: 168]
+[ Provider: 29, Workers hired: 165]
 [ Provider: 30, Workers hired: 0]
 [ Provider: 31, Workers hired: 0]
 [ Provider: 32, Workers hired: 0]
-[ Provider: 33, Workers hired: 0]
-[ Provider: 34, Workers hired: 34]
+[ Provider: 33, Workers hired: 196]
+[ Provider: 34, Workers hired: 0]
 [ Provider: 35, Workers hired: 0]
-[ Provider: 36, Workers hired: 54]
-[ Provider: 37, Workers hired: 40]
-[ Provider: 38, Workers hired: 49]
-[ Provider: 39, Workers hired: 60]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 174]
+[ Provider: 45, Workers hired: 182]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 0]
+[ Provider: 48, Workers hired: 188]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 174]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 186]
+[ Provider: 55, Workers hired: 0]
+[ Provider: 56, Workers hired: 168]
+[ Provider: 57, Workers hired: 0]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 0]
+[ Provider: 61, Workers hired: 0]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 0]
+[ Provider: 66, Workers hired: 182]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
 
 <<< post process
 
 
 <<< done
 
-data/instance_small_8.dat
+data/small/configuration_80.dat
 
 <<< setup
 
@@ -795,388 +966,336 @@ data/instance_small_8.dat
 <<< generate
 
 Tried aggregator 2 times.
-MIP Presolve eliminated 1531 rows and 70 columns.
-MIP Presolve modified 173 coefficients.
-Aggregator did 118 substitutions.
-Reduced MIP has 329 rows, 269 columns, and 880 nonzeros.
-Reduced MIP has 155 binaries, 114 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (2.99 ticks)
-Probing time = 0.00 sec. (1.13 ticks)
-Tried aggregator 2 times.
-MIP Presolve eliminated 0 rows and 6 columns.
-Aggregator did 19 substitutions.
-Reduced MIP has 310 rows, 244 columns, and 830 nonzeros.
-Reduced MIP has 130 binaries, 114 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (1.25 ticks)
-Probing time = 0.00 sec. (0.90 ticks)
-Clique table members: 691.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (1.53 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-      0     0    infeasible                                        173         
-
-Root node processing (before b&c):
-  Real time             =    0.02 sec. (12.07 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.02 sec. (12.07 ticks)
-
-<<< solve
-
-
-<<< no solution
-
-data/instance_small_9.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 2 times.
-MIP Presolve eliminated 1305 rows and 63 columns.
-MIP Presolve modified 158 coefficients.
-Aggregator did 127 substitutions.
-Reduced MIP has 285 rows, 231 columns, and 777 nonzeros.
-Reduced MIP has 126 binaries, 105 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (2.79 ticks)
-Probing time = 0.00 sec. (1.15 ticks)
+MIP Presolve eliminated 6618 rows and 161 columns.
+MIP Presolve modified 449 coefficients.
+Aggregator did 1 substitutions.
+Reduced MIP has 423 rows, 560 columns, and 1353 nonzeros.
+Reduced MIP has 160 binaries, 400 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (5,87 ticks)
+Probing time = 0,00 sec. (0,51 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 285 rows, 231 columns, and 777 nonzeros.
-Reduced MIP has 126 binaries, 105 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.63 ticks)
-Probing time = 0.00 sec. (1.11 ticks)
-Clique table members: 659.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (1.26 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-      0     0    infeasible                                        156         
-
-Root node processing (before b&c):
-  Real time             =    0.02 sec. (10.26 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.02 sec. (10.26 ticks)
-
-<<< solve
-
-
-<<< no solution
-
-data/instance_tiny_1.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 2 times.
-MIP Presolve eliminated 44 rows and 13 columns.
-MIP Presolve modified 30 coefficients.
-Aggregator did 18 substitutions.
-Reduced MIP has 35 rows, 30 columns, and 93 nonzeros.
-Reduced MIP has 17 binaries, 13 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.21 ticks)
-Found incumbent of value 6204.000000 after 0.00 sec. (0.27 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
+MIP Presolve eliminated 102 rows and 68 columns.
+Reduced MIP has 321 rows, 492 columns, and 1115 nonzeros.
+Reduced MIP has 126 binaries, 366 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,71 ticks)
+Probing time = 0,00 sec. (0,33 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 35 rows, 30 columns, and 93 nonzeros.
-Reduced MIP has 17 binaries, 13 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.06 ticks)
-Probing time = 0.00 sec. (0.03 ticks)
-Clique table members: 28.
+Reduced MIP has 321 rows, 492 columns, and 1115 nonzeros.
+Reduced MIP has 126 binaries, 366 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,62 ticks)
+Probing time = 0,00 sec. (0,32 ticks)
+Clique table members: 216.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.08 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,97 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                         6204.0000      865.0000            86.06%
-*     0+    0                         6183.0000      865.0000            86.01%
-*     0+    0                         6176.0000      865.0000            85.99%
-      0     0     4081.1579     5     6176.0000     4081.1579       16   33.92%
-*     0     0      integral     0     4300.0000       Cuts: 8       18    0.00%
-      0     0        cutoff           4300.0000     4300.0000       18    0.00%
-Elapsed time = 0.01 sec. (0.75 ticks, tree = 0.01 MB, solutions = 4)
+      0     0   3,09299e+07     8                 3,09299e+07      239         
+      0     0   3,09411e+07     2                    Cuts: 10      244         
+      0     0   3,09465e+07    29                     Cuts: 7      255         
+      0     0   3,09540e+07    39                     Cuts: 7      282         
+      0     0   3,09546e+07    53                     Cuts: 9      293         
+      0     0   3,09614e+07    47                     Cuts: 4      300         
+      0     0   3,09626e+07    48                     Cuts: 3      305         
+*     0+    0                       3,10322e+07   3,09626e+07      305    0,22%
+*     0+    0                       3,09764e+07   3,09626e+07      305    0,04%
+      0     0        cutoff         3,09764e+07   3,09764e+07      305    0,00%
+Elapsed time = 0,05 sec. (35,37 ticks, tree = 0,00 MB, solutions = 2)
 
 GUB cover cuts applied:  1
-Implied bound cuts applied:  1
+Implied bound cuts applied:  18
 Flow cuts applied:  1
-Zero-half cuts applied:  1
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  2
+Mixed integer rounding cuts applied:  3
+Gomory fractional cuts applied:  1
 
 Root node processing (before b&c):
-  Real time             =    0.01 sec. (0.75 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,05 sec. (35,40 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.01 sec. (0.75 ticks)
+Total (root+branch&cut) =    0,05 sec. (35,40 ticks)
 
 <<< solve
 
 
-OBJECTIVE: 4300
-Needed workers: 58
-Providers: 5
-Hirings:
-[ Provider: 1, Workers hired: 30]
-[ Provider: 2, Workers hired: 28]
-[ Provider: 3, Workers hired: 0]
-[ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-
-<<< post process
-
-
-<<< done
-
-data/instance_tiny_2.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 2 times.
-MIP Presolve eliminated 74 rows and 30 columns.
-MIP Presolve modified 24 coefficients.
-Aggregator did 18 substitutions.
-Reduced MIP has 30 rows, 25 columns, and 78 nonzeros.
-Reduced MIP has 14 binaries, 11 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.22 ticks)
-Found incumbent of value 4604.000000 after 0.00 sec. (0.27 ticks)
-Probing fixed 2 vars, tightened 5 bounds.
-Probing changed sense of 1 constraints.
-Probing time = 0.00 sec. (0.04 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 13 rows and 8 columns.
-MIP Presolve modified 2 coefficients.
-Reduced MIP has 17 rows, 17 columns, and 49 nonzeros.
-Reduced MIP has 11 binaries, 6 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.03 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 1 rows and 1 columns.
-Reduced MIP has 16 rows, 16 columns, and 47 nonzeros.
-Reduced MIP has 11 binaries, 5 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.03 ticks)
-Probing time = 0.00 sec. (0.02 ticks)
-Clique table members: 15.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.04 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                         4604.0000      425.0000            90.77%
-*     0     0      integral     0     3077.0000     3077.0000        9    0.00%
-Elapsed time = 0.00 sec. (0.54 ticks, tree = 0.00 MB, solutions = 2)
-
-Root node processing (before b&c):
-  Real time             =    0.00 sec. (0.55 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.00 sec. (0.55 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 3077
-Needed workers: 25
-Providers: 6
-Hirings:
-[ Provider: 1, Workers hired: 25]
-[ Provider: 2, Workers hired: 0]
-[ Provider: 3, Workers hired: 0]
-[ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 0]
-
-<<< post process
-
-
-<<< done
-
-data/instance_tiny_3.dat
-
-<<< setup
-
-
-<<< generate
-
-Tried aggregator 2 times.
-MIP Presolve eliminated 134 rows and 29 columns.
-MIP Presolve modified 55 coefficients.
-Aggregator did 32 substitutions.
-Reduced MIP has 76 rows, 60 columns, and 198 nonzeros.
-Reduced MIP has 33 binaries, 27 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.48 ticks)
-Found incumbent of value 8121.000000 after 0.00 sec. (0.61 ticks)
-Probing fixed 4 vars, tightened 13 bounds.
-Probing changed sense of 1 constraints.
-Probing time = 0.00 sec. (0.18 ticks)
-Tried aggregator 3 times.
-MIP Presolve eliminated 18 rows and 9 columns.
-MIP Presolve modified 4 coefficients.
-Aggregator did 3 substitutions.
-Reduced MIP has 55 rows, 48 columns, and 151 nonzeros.
-Reduced MIP has 27 binaries, 21 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.20 ticks)
-Probing time = 0.00 sec. (0.13 ticks)
-Tried aggregator 1 time.
-MIP Presolve eliminated 5 rows and 5 columns.
-Reduced MIP has 50 rows, 43 columns, and 136 nonzeros.
-Reduced MIP has 25 binaries, 18 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.14 ticks)
-Probing time = 0.00 sec. (0.10 ticks)
-Clique table members: 157.
-MIP emphasis: balance optimality and feasibility.
-MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.11 ticks)
-
-        Nodes                                         Cuts/
-   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
-
-*     0+    0                         8121.0000      102.0000            98.74%
-*     0+    0                         5391.0000      102.0000            98.11%
-      0     0     2111.4286     4     5391.0000     2111.4286       15   60.83%
-*     0     0      integral     0     2390.0000      Cuts: 15       30    0.00%
-      0     0        cutoff           2390.0000     2390.0000       30    0.00%
-Elapsed time = 0.01 sec. (2.02 ticks, tree = 0.01 MB, solutions = 3)
-
-GUB cover cuts applied:  1
-Clique cuts applied:  3
-Implied bound cuts applied:  6
-Flow cuts applied:  2
-Lift and project cuts applied:  1
-Gomory fractional cuts applied:  2
-
-Root node processing (before b&c):
-  Real time             =    0.01 sec. (2.02 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
-                          ------------
-Total (root+branch&cut) =    0.01 sec. (2.02 ticks)
-
-<<< solve
-
-
-OBJECTIVE: 2390
-Needed workers: 44
-Providers: 10
+OBJECTIVE: 3.097638e+7
+Needed workers: 5348
+Providers: 80
 Hirings:
 [ Provider: 1, Workers hired: 0]
-[ Provider: 2, Workers hired: 0]
+[ Provider: 2, Workers hired: 186]
 [ Provider: 3, Workers hired: 0]
 [ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 44]
+[ Provider: 5, Workers hired: 174]
 [ Provider: 6, Workers hired: 0]
 [ Provider: 7, Workers hired: 0]
 [ Provider: 8, Workers hired: 0]
 [ Provider: 9, Workers hired: 0]
-[ Provider: 10, Workers hired: 0]
+[ Provider: 10, Workers hired: 180]
+[ Provider: 11, Workers hired: 162]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 168]
+[ Provider: 16, Workers hired: 0]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 192]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 0]
+[ Provider: 22, Workers hired: 192]
+[ Provider: 23, Workers hired: 186]
+[ Provider: 24, Workers hired: 0]
+[ Provider: 25, Workers hired: 182]
+[ Provider: 26, Workers hired: 194]
+[ Provider: 27, Workers hired: 0]
+[ Provider: 28, Workers hired: 184]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 0]
+[ Provider: 31, Workers hired: 190]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 200]
+[ Provider: 34, Workers hired: 166]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 0]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 192]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 0]
+[ Provider: 42, Workers hired: 188]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 176]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 196]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 0]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 0]
+[ Provider: 53, Workers hired: 0]
+[ Provider: 54, Workers hired: 182]
+[ Provider: 55, Workers hired: 0]
+[ Provider: 56, Workers hired: 0]
+[ Provider: 57, Workers hired: 192]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 0]
+[ Provider: 60, Workers hired: 192]
+[ Provider: 61, Workers hired: 170]
+[ Provider: 62, Workers hired: 0]
+[ Provider: 63, Workers hired: 0]
+[ Provider: 64, Workers hired: 162]
+[ Provider: 65, Workers hired: 198]
+[ Provider: 66, Workers hired: 188]
+[ Provider: 67, Workers hired: 196]
+[ Provider: 68, Workers hired: 188]
+[ Provider: 69, Workers hired: 172]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 0]
+[ Provider: 72, Workers hired: 0]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 0]
+[ Provider: 78, Workers hired: 200]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 0]
 
 <<< post process
 
 
 <<< done
 
-data/instance_tiny_4.dat
+data/small/configuration_90.dat
 
 <<< setup
 
 
 <<< generate
 
-Tried aggregator 2 times.
-MIP Presolve eliminated 145 rows and 61 columns.
-MIP Presolve added 1 rows and 1 columns.
-MIP Presolve modified 20 coefficients.
-Aggregator did 23 substitutions.
-Reduced MIP has 11 rows, 14 columns, and 33 nonzeros.
-Reduced MIP has 10 binaries, 4 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.26 ticks)
-Found incumbent of value 4345.000000 after 0.00 sec. (0.31 ticks)
-Probing fixed 6 vars, tightened 3 bounds.
-Probing time = 0.00 sec. (0.01 ticks)
-Tried aggregator 2 times.
-MIP Presolve eliminated 9 rows and 11 columns.
-MIP Presolve modified 1 coefficients.
-Aggregator did 1 substitutions.
-Reduced MIP has 1 rows, 2 columns, and 2 nonzeros.
-Reduced MIP has 1 binaries, 1 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.01 ticks)
-Probing time = 0.00 sec. (0.00 ticks)
 Tried aggregator 1 time.
-Reduced MIP has 1 rows, 2 columns, and 2 nonzeros.
-Reduced MIP has 1 binaries, 1 generals, 0 SOSs, and 0 indicators.
-Presolve time = 0.00 sec. (0.00 ticks)
-Probing time = 0.00 sec. (0.00 ticks)
+MIP Presolve eliminated 8346 rows and 181 columns.
+MIP Presolve modified 511 coefficients.
+Reduced MIP has 476 rows, 631 columns, and 1975 nonzeros.
+Reduced MIP has 180 binaries, 451 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (6,28 ticks)
+Probing fixed 0 vars, tightened 6 bounds.
+Probing time = 0,00 sec. (4,38 ticks)
+Cover probing fixed 0 vars, tightened 1 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 135 rows and 90 columns.
+Reduced MIP has 341 rows, 541 columns, and 1615 nonzeros.
+Reduced MIP has 135 binaries, 406 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,92 ticks)
+Probing time = 0,00 sec. (1,25 ticks)
+Cover probing fixed 0 vars, tightened 1 bounds.
+Tried aggregator 1 time.
+Reduced MIP has 341 rows, 541 columns, and 1615 nonzeros.
+Reduced MIP has 135 binaries, 406 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,80 ticks)
+Probing time = 0,00 sec. (1,20 ticks)
+Clique table members: 234.
 MIP emphasis: balance optimality and feasibility.
 MIP search method: dynamic search.
-Parallel mode: deterministic, using up to 2 threads.
-Root relaxation solution time = 0.00 sec. (0.00 ticks)
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (2,89 ticks)
 
         Nodes                                         Cuts/
    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
 
-*     0+    0                         4345.0000     2516.0000            42.09%
-*     0     0      integral     0     2516.0000     2516.0000        0    0.00%
-Elapsed time = 0.00 sec. (0.37 ticks, tree = 0.00 MB, solutions = 2)
+      0     0   1,46065e+08     7                 1,46065e+08      308         
+      0     0   1,46080e+08     9                     Cuts: 8      315         
+      0     0   1,46081e+08    23                     Cuts: 9      322         
+      0     0   1,46085e+08    30                     Cuts: 7      329         
+*     0+    0                       1,46180e+08   1,46085e+08      329    0,06%
+
+Repeating presolve.
+Tried aggregator 2 times.
+MIP Presolve eliminated 202 rows and 304 columns.
+MIP Presolve modified 2 coefficients.
+Aggregator did 9 substitutions.
+Reduced MIP has 130 rows, 228 columns, and 625 nonzeros.
+Reduced MIP has 52 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (1,17 ticks)
+Probing time = 0,00 sec. (0,10 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 130 rows, 228 columns, and 625 nonzeros.
+Reduced MIP has 52 binaries, 176 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,43 ticks)
+Represolve time = 0,00 sec. (2,19 ticks)
+Probing time = 0,00 sec. (0,10 ticks)
+Clique table members: 51.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0,00 sec. (1,38 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                       1,46180e+08   1,46162e+08      457    0,01%
+      0     0   1,46085e+08    30   1,46180e+08   1,46162e+08      457    0,01%
+      0     0   1,46090e+08    34   1,46180e+08       Cuts: 9      466    0,01%
+      0     0   1,46105e+08    37   1,46180e+08       Cuts: 7      477    0,01%
+      0     0   1,46107e+08    53   1,46180e+08       Cuts: 6      482    0,01%
+
+Cover cuts applied:  1
+Implied bound cuts applied:  24
+Mixed integer rounding cuts applied:  2
 
 Root node processing (before b&c):
-  Real time             =    0.00 sec. (0.37 ticks)
-Parallel b&c, 2 threads:
-  Real time             =    0.00 sec. (0.00 ticks)
-  Sync time (average)   =    0.00 sec.
-  Wait time (average)   =    0.00 sec.
+  Real time             =    0,08 sec. (58,97 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
                           ------------
-Total (root+branch&cut) =    0.00 sec. (0.37 ticks)
+Total (root+branch&cut) =    0,08 sec. (58,97 ticks)
 
 <<< solve
 
 
-OBJECTIVE: 2516
-Needed workers: 18
-Providers: 8
+OBJECTIVE: 1.461796e+8
+Needed workers: 10790
+Providers: 90
 Hirings:
 [ Provider: 1, Workers hired: 0]
 [ Provider: 2, Workers hired: 0]
 [ Provider: 3, Workers hired: 0]
 [ Provider: 4, Workers hired: 0]
-[ Provider: 5, Workers hired: 0]
-[ Provider: 6, Workers hired: 18]
+[ Provider: 5, Workers hired: 380]
+[ Provider: 6, Workers hired: 0]
 [ Provider: 7, Workers hired: 0]
 [ Provider: 8, Workers hired: 0]
+[ Provider: 9, Workers hired: 0]
+[ Provider: 10, Workers hired: 400]
+[ Provider: 11, Workers hired: 0]
+[ Provider: 12, Workers hired: 0]
+[ Provider: 13, Workers hired: 0]
+[ Provider: 14, Workers hired: 0]
+[ Provider: 15, Workers hired: 0]
+[ Provider: 16, Workers hired: 334]
+[ Provider: 17, Workers hired: 0]
+[ Provider: 18, Workers hired: 0]
+[ Provider: 19, Workers hired: 0]
+[ Provider: 20, Workers hired: 0]
+[ Provider: 21, Workers hired: 398]
+[ Provider: 22, Workers hired: 0]
+[ Provider: 23, Workers hired: 0]
+[ Provider: 24, Workers hired: 344]
+[ Provider: 25, Workers hired: 372]
+[ Provider: 26, Workers hired: 0]
+[ Provider: 27, Workers hired: 384]
+[ Provider: 28, Workers hired: 342]
+[ Provider: 29, Workers hired: 0]
+[ Provider: 30, Workers hired: 368]
+[ Provider: 31, Workers hired: 0]
+[ Provider: 32, Workers hired: 0]
+[ Provider: 33, Workers hired: 308]
+[ Provider: 34, Workers hired: 0]
+[ Provider: 35, Workers hired: 0]
+[ Provider: 36, Workers hired: 0]
+[ Provider: 37, Workers hired: 384]
+[ Provider: 38, Workers hired: 0]
+[ Provider: 39, Workers hired: 0]
+[ Provider: 40, Workers hired: 0]
+[ Provider: 41, Workers hired: 372]
+[ Provider: 42, Workers hired: 0]
+[ Provider: 43, Workers hired: 0]
+[ Provider: 44, Workers hired: 0]
+[ Provider: 45, Workers hired: 380]
+[ Provider: 46, Workers hired: 0]
+[ Provider: 47, Workers hired: 310]
+[ Provider: 48, Workers hired: 0]
+[ Provider: 49, Workers hired: 300]
+[ Provider: 50, Workers hired: 0]
+[ Provider: 51, Workers hired: 0]
+[ Provider: 52, Workers hired: 370]
+[ Provider: 53, Workers hired: 382]
+[ Provider: 54, Workers hired: 0]
+[ Provider: 55, Workers hired: 384]
+[ Provider: 56, Workers hired: 330]
+[ Provider: 57, Workers hired: 386]
+[ Provider: 58, Workers hired: 0]
+[ Provider: 59, Workers hired: 388]
+[ Provider: 60, Workers hired: 348]
+[ Provider: 61, Workers hired: 326]
+[ Provider: 62, Workers hired: 334]
+[ Provider: 63, Workers hired: 360]
+[ Provider: 64, Workers hired: 0]
+[ Provider: 65, Workers hired: 0]
+[ Provider: 66, Workers hired: 322]
+[ Provider: 67, Workers hired: 0]
+[ Provider: 68, Workers hired: 0]
+[ Provider: 69, Workers hired: 0]
+[ Provider: 70, Workers hired: 0]
+[ Provider: 71, Workers hired: 0]
+[ Provider: 72, Workers hired: 396]
+[ Provider: 73, Workers hired: 0]
+[ Provider: 74, Workers hired: 0]
+[ Provider: 75, Workers hired: 0]
+[ Provider: 76, Workers hired: 0]
+[ Provider: 77, Workers hired: 0]
+[ Provider: 78, Workers hired: 0]
+[ Provider: 79, Workers hired: 0]
+[ Provider: 80, Workers hired: 0]
+[ Provider: 81, Workers hired: 0]
+[ Provider: 82, Workers hired: 0]
+[ Provider: 83, Workers hired: 0]
+[ Provider: 84, Workers hired: 0]
+[ Provider: 85, Workers hired: 0]
+[ Provider: 86, Workers hired: 0]
+[ Provider: 87, Workers hired: 0]
+[ Provider: 88, Workers hired: 360]
+[ Provider: 89, Workers hired: 358]
+[ Provider: 90, Workers hired: 370]
 
 <<< post process
 
