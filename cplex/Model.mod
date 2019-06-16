@@ -2,9 +2,11 @@
  * OPL 12.6.0.0 Model
  * Authors: Amalia and Sergio
  *********************************************/
-
-int nProviders=...;
+//
+// Ιnput data
+//
 int wr=...;
+int nProviders=...;
 range P=1..nProviders;
 
 // Available workers per provider
@@ -19,47 +21,35 @@ int country[p in P]=...;
 // Price per worker of provider p.
 int cost_worker[p in P]=...;
 
-
 // Costs of the taxes for hiring people from
 // other countries.
-
 // Cost of the first 5 workers
 int cost_1 = ...;
-
 // Cost of the next 5 workers
 int cost_2 = ...;
-
 // Cost of the remaining workers
 int cost_3 = ...;
 
-// Whether two providers belong to the same country or not
-int same_country[p1 in P, p2 in P];
-
-// Number of workers from provider p that are hired.
+// 
+// Decision Variables
+//
+// # of people hired from base batch
 dvar int hired_base[p in P];
+// # of people hired from extra batch
 dvar int hired_extra[p in P];
-
-// Indicator variables to check whether we hired all,
-// half or none of the workers from provider p.
-dvar boolean all_hired[p in P];
-dvar boolean half_hired[p in P];
-dvar boolean none_hired[p in P];
+// 1 if any employee of provider p have been hired
 dvar boolean some_hired[p in P];
-
-// Number of people hired belonging to the
-// corresponding tax bracket.
+// 1 if all workers from provider p have been hired
+dvar boolean all_hired[p in P];
+// # of people hired that belong to the 1st, 2nd and 3rd tax bracket respectively
 dvar int hired_1[p in P];
 dvar int hired_2[p in P];
 dvar int hired_3[p in P];
 
-// To check whether we hired for each of the tax
-// brackets for each provider
-dvar boolean all_extra_1[p in P];
-dvar boolean all_extra_2[p in P];
-dvar boolean third_hire[p in P];
+// Whether two providers belong to the same country or not
+int same_country[p1 in P, p2 in P];
 
 dvar int z;
-
 
 // PREPROCESSING
 execute {
@@ -73,91 +63,57 @@ execute {
 }
 ;
 
-minimize
-  z;
+// objective function
+minimize z;
 
-subject to {
+//constraints
+subject to{
 
-	z == sum(p in P)
-		(cost_contract[p] * some_hired[p] + cost_worker[p] * (hired_base[p] + hired_extra[p])
-			+ cost_1 * hired_1[p] + cost_2 * hired_2[p] + cost_3 * hired_3[p]);
+	 // set z
+	 z == sum(p in P) (cost_contract[p]*some_hired[p] + cost_worker[p]*(hired_base[p] + hired_extra[p])
+	  + hired_1[p]*cost_1 + hired_2[p] * cost_2 + hired_3[p]*cost_3 + hired_extra[p]*cost_3);
 	  
-	// CONSTRAINT 1
-	// We hire either all or less providers.
+	// Constraint 1
+	// hire exactly the required number of workers wr
+	sum(p in P) (hired_base[p]+hired_extra[p]) == wr;
+	
+	// Constraint 2
+	forall(p in P) hired_base[p] <= some_hired[p] * available_workers[p];
+	  
+        // Constraint 3
+	forall(p in P) all_hired[p] * available_workers[p] <= hired_base[p];
+	
+	// Constraint 4 
+	// if we hire all workers from provider p, we can hire up to same number of extra
+	forall(p in P) hired_extra[p] <= all_hired[p] * available_workers[p];
+	
+	// Constraint 5
+	// if we hire from the provider p, hire either half or all
+	forall(p in P) available_workers[p]/2 * (some_hired[p] + all_hired[p]) == hired_base[p];
+	
+	// Constraint 6
+	forall(p in P) hired_1[p] + hired_2[p] + hired_3[p] == hired_base[p] + hired_extra[p];
+	
+	// Constraint 7
+	// hired workers belonging to the 1st bracket can be at most 5
+	forall(p in P) 0 <= hired_1[p] <= 5;
+	
+	// Constraint 8 
+	// hired workers belonging to the 2nd bracket can be at most 5
+	forall(p in P) 0 <= hired_2[p] <= 5;
+	
+	// Constraint 9
+	// the company cannot hire two providers from the same country
+	forall(p1 in P, p2 in P: p1 != p2) some_hired[p1] + all_hired[p2] + same_country[p1][p2] <= 2;
+	
+	
+	// extra negativity constraints
 	forall(p in P)
-	  all_hired[p] * available_workers[p] <= hired_base[p];
-	  
-	// CONSTRAINT 2
-	// If we hire some providers, we can hire them all, or half of them.
-	forall(p in P)
-	  hired_base[p] == available_workers[p] * all_hired[p] + available_workers[p]/2 * half_hired[p]; 
- 	
- 	// CONSTRAINT 3
- 	// Half, all and none values are excluding i.e. if one of them
- 	// is true, the other ones are false.
- 	forall(p in P)
- 	  all_hired[p] + half_hired[p] + none_hired[p] == 1;
-	  
-	  
-	// AUX CONSTRAINT
+	  hired_extra[p] >= 0;
 	
 	forall(p in P)
-	  some_hired[p] == 1 - none_hired[p];
-	  
-	// CONSTRAINT 4
-	// If we hire some providers from two different providers
-	// they have to be from different countries.
-	forall(p1 in P, p2 in P: p1 != p2)
-	  some_hired[p1] + some_hired[p2] + same_country[p1, p2] <= 2;
-	  
-	// CONSTRAINT 5
-	// The number of total providers hired in the end has to be
-	// the same as the initial amount received as an input.
-	sum(p in P) (hired_base[p] + hired_extra[p]) == wr;
-	
-	// CONSTRAINT 6 
-	// The number of hired workers from tax bracket 1 from provider p
-	// has to be at most 5.
-	forall(p in P)
-	  hired_1[p] <= 5 * all_hired[p];
-	  
-	forall(p in P){
-	  hired_1[p] >= 5 * all_extra_1[p];
-	  hired_1[p] - 4 <= all_extra_1[p];
-	}
-	
-	forall(p in P){
-	  hired_2[p] >= 5 * all_extra_2[p];
-	  hired_2[p] - 4 <= all_extra_2[p];
-	}
-	
-	forall(p in P){
-	  all_extra_1[p] >= all_extra_2[p];
-	  third_hire[p] <= all_extra_2[p];
- 	}	  
-	  
-	  
-	// CONSTRAINT 7
-	// The number of hired workers from tax bracket 2 from provider p
-	// has to be at most 5.
-	forall(p in P){
-	  hired_2[p] <= all_extra_1[p] * 5;
- 	}
-	  
-	// CONSTRAINT 8
-	// The number of hired workers from tax bracket 3 from provider p
-	// has to be at most available_workers - 10.
-	forall(p in P){
-	  hired_3[p] <= (available_workers[p] - 10) * all_extra_2[p];
-	  hired_3[p] >= third_hire[p];
- 	}
-	  
-	// CONSTRAINT 9
-	// The sum of the workers hired from a provider p in the different
-	// tax brackets has to be equal to the extra workers hired. 
-	forall(p in P)
-	  hired_1[p] + hired_2[p] + hired_3[p] == hired_extra[p];
-}
+	  hired_3[p] >= 0;}
+
 
 execute {
   writeln("Needed workers: " + wr);
@@ -174,14 +130,13 @@ execute PARAMS
   cplex.tilim = 10*60;  // set time model stop (second)
   //cplex.WorkMem= 10000; // default value 2048
   //cplex.memoryemphasis = 1 // On: conserve memory where possible; default 0
-  cplex.varsel = 3;
+  //cplex.varsel = 3;
   // 1-->Emphasize feasibility over optimality 
   // 2-->Emphasize optimality over feasibility 
-  cplex.MIPEmphasis = 2; //   
-  cplex.NodeSel = 2;
+  //cplex.MIPEmphasis = 2; //   
+  //cplex.NodeSel = 2;
   // set time for CPLEX to stop running, in seconds
   cplex.tilim = 30*60;
   // relative MIP gap tolerance to 0.01
   //cplex.epgap=0.01;
 }
- 
