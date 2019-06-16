@@ -168,5 +168,20 @@ execute {
   	writeln("[ Provider: " + p + ", Workers hired: " + hired + "]");
   }
 }
-;
+
+execute PARAMS
+{
+  cplex.tilim = 10*60;  // set time model stop (second)
+  //cplex.WorkMem= 10000; // default value 2048
+  //cplex.memoryemphasis = 1 // On: conserve memory where possible; default 0
+  cplex.varsel = 3;
+  // 1-->Emphasize feasibility over optimality 
+  // 2-->Emphasize optimality over feasibility 
+  cplex.MIPEmphasis = 2; //   
+  cplex.NodeSel = 2;
+  // set time for CPLEX to stop running, in seconds
+  cplex.tilim = 30*60;
+  // relative MIP gap tolerance to 0.01
+  //cplex.epgap=0.01;
+}
  
