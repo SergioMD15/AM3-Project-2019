@@ -1,0 +1,230 @@
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_100.dat...
+Reading Input Data file data/configuration_100.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000572          inf          0.0              0
+    1.49166775   169693019.5      13241.5              1
+Greedy solution:  169693019.5
+Local search solution:  169693019.5
+    1.49175072   169693019.5      13241.5              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 279255
+  Total Eval. Time      1.44303560256958 s
+  Avg. Time / Candidate 0.0051674476824750855 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 0
+  Total Eval. Time      0 s
+  Avg. Time / Iteration 0.0 ms
+solutions/greedy_ls/instance_100.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_10.dat...
+Reading Input Data file data/configuration_10.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000238          inf          0.0              0
+    0.00170541      20455.0         81.0              1
+Greedy solution:  20455
+Local search solution:  20441
+    0.00770450      20441.0         81.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 229
+  Total Eval. Time      0.0015401840209960938 s
+  Avg. Time / Candidate 0.006725694414830103 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 3
+  Total Eval. Time      0.005948305130004883 s
+  Avg. Time / Iteration 1.9827683766682942 ms
+solutions/greedy_ls/instance_10.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_20.dat...
+Reading Input Data file data/configuration_20.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000334          inf          0.0              0
+    0.00891590      96438.0        206.0              1
+Greedy solution:  96438
+Local search solution:  95786
+    0.04280305      95786.0        206.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 1310
+  Total Eval. Time      0.008439064025878906 s
+  Avg. Time / Candidate 0.00644203360754115 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 18
+  Total Eval. Time      0.03381776809692383 s
+  Avg. Time / Iteration 1.878764894273546 ms
+solutions/greedy_ls/instance_20.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_30.dat...
+Reading Input Data file data/configuration_30.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000215          inf          0.0              0
+    0.01992202     398955.0        511.0              1
+Greedy solution:  398955
+Local search solution:  398955
+    0.02436328     398955.0        511.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 3109
+  Total Eval. Time      0.01906275749206543 s
+  Avg. Time / Candidate 0.006131475552288656 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 1
+  Total Eval. Time      0.0043680667877197266 s
+  Avg. Time / Iteration 4.368066787719727 ms
+solutions/greedy_ls/instance_30.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_40.dat...
+Reading Input Data file data/configuration_40.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000286          inf          0.0              0
+    0.03851390     779398.0        736.0              1
+Greedy solution:  779398
+Local search solution:  764706
+    0.20488071     764706.0        736.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 5917
+  Total Eval. Time      0.03698396682739258 s
+  Avg. Time / Candidate 0.006250459156226564 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 24
+  Total Eval. Time      0.1662425994873047 s
+  Avg. Time / Iteration 6.926774978637695 ms
+solutions/greedy_ls/instance_40.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_50.dat...
+Reading Input Data file data/configuration_50.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00002098          inf          0.0              0
+    0.08950281    1776141.0       1147.0              1
+Greedy solution:  1776141
+Local search solution:  1774504
+    0.18208289    1774504.0       1147.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 12184
+  Total Eval. Time      0.0863637924194336 s
+  Avg. Time / Candidate 0.007088295503893105 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 18
+  Total Eval. Time      0.09248542785644531 s
+  Avg. Time / Iteration 5.138079325358073 ms
+solutions/greedy_ls/instance_50.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_60.dat...
+Reading Input Data file data/configuration_60.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000691          inf          0.0              0
+    0.10278559    1935504.0       1183.0              1
+Greedy solution:  1935504
+Local search solution:  1934779
+    0.29369664    1934779.0       1183.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 14995
+  Total Eval. Time      0.0994875431060791 s
+  Avg. Time / Candidate 0.006634714445220347 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 30
+  Total Eval. Time      0.1908102035522461 s
+  Avg. Time / Iteration 6.360340118408203 ms
+solutions/greedy_ls/instance_60.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_70.dat...
+Reading Input Data file data/configuration_70.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000238          inf          0.0              0
+    0.33027673   15326038.0       3546.0              1
+Greedy solution:  15326038
+Local search solution:  14914716
+    0.91631460   14914716.0       3546.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 60121
+  Total Eval. Time      0.3204505443572998 s
+  Avg. Time / Candidate 0.005330093384296665 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 92
+  Total Eval. Time      0.5859389305114746 s
+  Avg. Time / Iteration 6.368901418602985 ms
+solutions/greedy_ls/instance_70.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_80.dat...
+Reading Input Data file data/configuration_80.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000286          inf          0.0              0
+    0.51142001   33008670.5       5324.5              1
+Greedy solution:  33008670.5
+Local search solution:  33008670.5
+    0.51151705   33008670.5       5324.5              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 97078
+  Total Eval. Time      0.4960041046142578 s
+  Avg. Time / Candidate 0.0051093358393689385 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 0
+  Total Eval. Time      0 s
+  Avg. Time / Iteration 0.0 ms
+solutions/greedy_ls/instance_80.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/greedy_ls/config_90.dat...
+Reading Input Data file data/configuration_90.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000238          inf          0.0              0
+    1.09316683   158248736.0      10722.0              1
+Greedy solution:  158248736
+Local search solution:  158248736
+    1.09323931   158248736.0      10722.0              1
+
+Greedy Candidate Evaluation Performance:
+  Num. Candidates Eval. 215831
+  Total Eval. Time      1.0593209266662598 s
+  Avg. Time / Candidate 0.00490810368606113 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 0
+  Total Eval. Time      0 s
+  Avg. Time / Iteration 0.0 ms
+solutions/greedy_ls/instance_90.sol
