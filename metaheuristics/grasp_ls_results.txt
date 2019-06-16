@@ -1,0 +1,242 @@
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_100.dat...
+Reading Input Data file data/configuration_100.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf          0.0              0
+    1.08482695   111368585.0       9158.0              1
+   32.36826420   111135822.0       9165.0             27
+  111.25681162   108785257.0       9231.0             81
+  300.07988906   108785257.0       9231.0            211
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 60046914
+  Total Eval. Time      277.2137131690979 s
+  Avg. Time / Candidate 0.004616618818564063 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 211
+  Total Eval. Time      1.2505645751953125 s
+  Avg. Time / Iteration 5.926846327939869 ms
+solutions/grasp_ls/instance_100.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_10.dat...
+Reading Input Data file data/configuration_10.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000143          inf          0.0              0
+    0.00214553       6043.0         47.0              1
+    1.29436684       5578.0         49.0            617
+  300.00081062       5578.0         49.0         146082
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 39614048
+  Total Eval. Time      193.11374282836914 s
+  Avg. Time / Candidate 0.004874880315901297 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 207572
+  Total Eval. Time      87.13910126686096 s
+  Avg. Time / Iteration 0.41980180981471954 ms
+solutions/grasp_ls/instance_10.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_20.dat...
+Reading Input Data file data/configuration_20.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf          0.0              0
+    0.03168464      92165.0        203.0              3
+    0.09383345      87354.0        206.0              6
+    0.42039347      84840.0        206.0             34
+    1.02942491      84274.0        206.0             93
+    2.07404780      83890.0        206.0            183
+    4.52282476      83785.0        206.0            410
+    5.72104883      80015.0        206.0            525
+   10.40869832      79853.0        206.0            958
+   15.30677986      76491.0        206.0           1395
+   74.00590301      75355.0        206.0           6723
+  104.09979081      75130.0        206.0           9364
+  300.00444627      75130.0        206.0          27283
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 45613631
+  Total Eval. Time      207.88586616516113 s
+  Avg. Time / Candidate 0.004557538209689142 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 58695
+  Total Eval. Time      74.05566835403442 s
+  Avg. Time / Iteration 1.261703183474477 ms
+solutions/grasp_ls/instance_20.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_30.dat...
+Reading Input Data file data/configuration_30.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000095          inf          0.0              0
+    0.01842618     232847.0        316.0              1
+   25.07919216     232358.0        319.0           1450
+   81.61234713     230857.0        319.0           4679
+  118.14895678     230847.0        320.0           6743
+  239.18921709     229699.0        321.0          12924
+  300.01541710     229699.0        321.0          15698
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 50842893
+  Total Eval. Time      266.40829706192017 s
+  Avg. Time / Candidate 0.00523983356064967 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 15698
+  Total Eval. Time      10.822569847106934 s
+  Avg. Time / Iteration 0.689423483699002 ms
+solutions/grasp_ls/instance_30.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_40.dat...
+Reading Input Data file data/configuration_40.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf          0.0              0
+    0.03174615     431097.0        443.5              1
+  300.02932811     431097.0        443.5           8540
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 55161444
+  Total Eval. Time      271.05435395240784 s
+  Avg. Time / Candidate 0.004913837171347578 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 8540
+  Total Eval. Time      6.354502201080322 s
+  Avg. Time / Iteration 0.7440869087916068 ms
+solutions/grasp_ls/instance_40.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_50.dat...
+Reading Input Data file data/configuration_50.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000262          inf          0.0              0
+    0.07061791    1110304.0        744.0              1
+    1.74795818    1092906.0        746.0             27
+    5.39429283    1066923.0        747.0             85
+  102.56516790    1066071.0        750.0           1531
+  113.64931703    1063336.0        755.0           1705
+  300.05255723    1063336.0        755.0           4460
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 55761459
+  Total Eval. Time      272.9112432003021 s
+  Avg. Time / Candidate 0.004894262956790677 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 4460
+  Total Eval. Time      4.396050214767456 s
+  Avg. Time / Iteration 0.9856614831317166 ms
+solutions/grasp_ls/instance_50.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_60.dat...
+Reading Input Data file data/configuration_60.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000167          inf          0.0              0
+    0.07711720    1304438.0        756.0              1
+    2.05160618    1192548.0        770.0             27
+   68.90264368    1157126.0        771.0            887
+  185.09920168    1151603.0        773.0           2348
+  300.03492808    1151603.0        773.0           3836
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 58943543
+  Total Eval. Time      274.22406363487244 s
+  Avg. Time / Candidate 0.004652317279856632 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 3836
+  Total Eval. Time      3.4852054119110107 s
+  Avg. Time / Iteration 0.9085519843355085 ms
+solutions/grasp_ls/instance_60.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_70.dat...
+Reading Input Data file data/configuration_70.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000143          inf          0.0              0
+    0.32075691   11958473.0       2608.0              1
+    2.42844582   11563855.0       2704.0              8
+   13.19744205   11534080.0       2732.0             43
+   19.63186073   11414374.0       2765.0             64
+  144.96344209   11318129.0       2768.0            445
+  159.17456508   11192980.0       2785.0            487
+  300.23513532   11192980.0       2785.0            924
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 57281700
+  Total Eval. Time      276.5339596271515 s
+  Avg. Time / Candidate 0.0048276143973930855 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 924
+  Total Eval. Time      1.945228099822998 s
+  Avg. Time / Iteration 2.1052252162586558 ms
+solutions/grasp_ls/instance_70.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_80.dat...
+Reading Input Data file data/configuration_80.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000119          inf          0.0              0
+    0.48794222   23559755.0       3666.0              1
+    4.62157488   23186490.0       3762.0              9
+  274.38301349   23106076.0       3819.0            554
+  300.50559545   23106076.0       3819.0            608
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 58218424
+  Total Eval. Time      277.9202105998993 s
+  Avg. Time / Candidate 0.0047737501551038085 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 608
+  Total Eval. Time      1.4943146705627441 s
+  Avg. Time / Iteration 2.4577543923729346 ms
+solutions/grasp_ls/instance_80.sol
+AMMM Course Project Heuristics
+-------------------
+Reading Config file config/grasp_ls/config_90.dat...
+Reading Input Data file data/configuration_90.dat...
+Creating Problem...
+Solving Problem...
+Elap. Time (s)   Obj. Value   Workers Hired     Iterations
+    0.00000143          inf          0.0              0
+    1.10006666   118898556.0       8132.0              1
+   94.20170665   116563255.0       8229.0             86
+  300.86939073   116563255.0       8229.0            238
+
+GRASP Candidate Evaluation Performance:
+  Num. Candidates Eval. 50473660
+  Total Eval. Time      277.0041084289551 s
+  Avg. Time / Candidate 0.0054880923719214155 ms
+
+Local Search Performance:
+  Num. Iterations Eval. 238
+  Total Eval. Time      1.6103515625 s
+  Avg. Time / Iteration 6.766183035714286 ms
+solutions/grasp_ls/instance_90.sol
